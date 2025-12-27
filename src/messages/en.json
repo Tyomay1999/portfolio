@@ -1,12 +1,38 @@
 {
   "welcomeTxt": "Portfolio",
   "summary": {
-    "intro": "Infrastructure is ready. UI blocks will be added next."
+    "intro": "Infrastructure is ready. Next, UI blocks will be added."
   },
   "seo": {
     "home": {
       "title": "Portfolio",
       "description": "Personal portfolio website."
+    }
+  },
+  "sections": {
+    "hero": {
+      "title": "Welcome",
+      "body": "This is the Hero section."
+    },
+    "about": {
+      "title": "About Me",
+      "body": "This is the About Me section."
+    },
+    "projects": {
+      "title": "Projects",
+      "body": "This is the Projects section."
+    },
+    "experience": {
+      "title": "Work Experience",
+      "body": "This is the Work Experience section."
+    },
+    "stack": {
+      "title": "Tech Stack",
+      "body": "This is the Tech Stack section."
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "body": "This is the Contact section."
     }
   }
 }

@@ -14,3 +14,129 @@ html.dark body {
   background-color: rgb(15 23 42);
   color: rgb(241 245 249);
 }
+
+@keyframes enterFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes enterFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes enterFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes enterFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes enterZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes enterZoomOut {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes enterBlur {
+  from {
+    opacity: 0;
+    filter: blur(6px);
+    transform: scale(1.01);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+.animate-enter-from-right {
+  animation: enterFromRight 320ms ease-out;
+}
+.animate-enter-from-left {
+  animation: enterFromLeft 320ms ease-out;
+}
+.animate-enter-from-top {
+  animation: enterFromTop 320ms ease-out;
+}
+.animate-enter-from-bottom {
+  animation: enterFromBottom 320ms ease-out;
+}
+.animate-enter-zoom-in {
+  animation: enterZoomIn 320ms ease-out;
+}
+.animate-enter-zoom-out {
+  animation: enterZoomOut 320ms ease-out;
+}
+.animate-enter-blur {
+  animation: enterBlur 360ms ease-out;
+}
+
+.story-scroll-container {
+  scrollbar-gutter: stable both-edges;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.invisible-scrollbar {
+  scrollbar-color: transparent transparent;
+}

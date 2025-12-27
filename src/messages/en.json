@@ -1,0 +1,12 @@
+{
+  "welcomeTxt": "Portfolio",
+  "summary": {
+    "intro": "Infrastructure is ready. UI blocks will be added next."
+  },
+  "seo": {
+    "home": {
+      "title": "Portfolio",
+      "description": "Personal portfolio website."
+    }
+  }
+}

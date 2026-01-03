@@ -5,15 +5,31 @@ import { useTranslations } from 'next-intl';
 import StorySectionWrapper from '@/components/Sections/StorySectionWrapper';
 
 export default function AboutMeSection() {
-  const t = useTranslations('sections.about');
+  const t = useTranslations('summary');
 
   return (
     <StorySectionWrapper>
-      <div className="flex min-h-[100vh] items-center justify-center">
-        <div className="rounded-xl border border-slate-200 bg-white/70 p-6 text-slate-900 shadow-sm backdrop-blur dark:border-slate-700 dark:bg-slate-800/60 dark:text-slate-100">
-          <h2 className="text-xl font-semibold">{t('title')}</h2>
-          <p className="mt-2 opacity-80">{t('body')}</p>
+      <div className="text-my-light-text dark:text-my-dark-text mx-auto max-w-3xl px-2 text-center transition-colors duration-300 sm:px-4">
+        <h1 className="mb-8 font-serif text-4xl font-light text-slate-900 md:mb-12 md:text-4xl lg:text-6xl dark:text-slate-100">
+          {t('aboutMe')}
+        </h1>
+
+        <div className="space-y-6 font-sans text-base leading-relaxed text-slate-700 md:space-y-8 md:text-lg lg:text-xl dark:text-slate-300">
+          <p className="mb-6 text-justify">{t('intro')}</p>
+          <p className="mb-6 text-justify">{t('specialization')}</p>
+
+          <ul className="mb-6 ml-0 list-disc space-y-2 pl-5 text-justify sm:ml-6">
+            <li>{t('experience.list1')}</li>
+            <li>{t('experience.list2')}</li>
+            <li>{t('experience.list3')}</li>
+            <li>{t('experience.list4')}</li>
+            <li>{t('experience.list5')}</li>
+          </ul>
+
+          <p className="text-justify italic">{t('focus')}</p>
         </div>
+
+        <div className="mx-auto mt-8 h-0.5 w-24 bg-slate-300 dark:bg-slate-600" />
       </div>
     </StorySectionWrapper>
   );

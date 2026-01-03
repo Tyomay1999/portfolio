@@ -1,13 +1,129 @@
 {
   "welcomeTxt": "Портфолио",
-  "summary": {
-    "intro": "Инфраструктура готова. Далее будут добавлены UI-блоки."
-  },
   "seo": {
     "home": {
       "title": "Портфолио",
       "description": "Персональный сайт-портфолио."
     }
+  },
+  "hero": {
+    "name": "Artyom Bordulanyuk",
+    "nickname": "Tyomay",
+    "role": "Full-Stack веб-разработчик",
+    "typingPhrases": [
+      "Full-Stack веб-разработчик",
+      "React • Next.js • Node.js",
+      "TypeScript • PostgreSQL • Docker",
+      "Быстрые и масштабируемые веб-продукты",
+      "Чистая архитектура • CI/CD"
+    ]
+  },
+  "contactIcons": {
+    "listAriaLabel": "Способы связи",
+    "email": "Email",
+    "emailAria": "Написать на email",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Открыть WhatsApp",
+    "phone": "Телефон",
+    "phoneAria": "Позвонить",
+    "telegram": "Telegram",
+    "telegramAria": "Открыть Telegram",
+    "upwork": "Upwork",
+    "upworkAria": "Открыть Upwork",
+    "linkedin": "LinkedIn",
+    "linkedinAria": "Открыть LinkedIn",
+    "github": "GitHub",
+    "githubAria": "Открыть GitHub"
+  },
+  "toast": {
+    "emailCopied": "Email скопирован в буфер обмена",
+    "phoneCopied": "Номер телефона скопирован в буфер обмена"
+  },
+
+  "summary": {
+    "aboutMe": "Обо мне",
+    "intro": "Senior Full-Stack инженер с более чем 5-летним практическим опытом проектирования и разработки масштабируемых и надёжных веб-систем.",
+    "specialization": "Работаю по всему стеку с фокусом на архитектуру, стабильность backend-систем и долгосрочную поддерживаемость решений. Основной стек включает React, Next.js, Node.js, Express.js, PostgreSQL и MongoDB, а также практический опыт CI/CD автоматизации, контейнеризации и real-time систем.",
+    "experience": {
+      "list1": "Проектирование и эксплуатация отказоустойчивых backend-систем за Nginx с Docker-деплоем",
+      "list2": "Построение поддерживаемой frontend-архитектуры на базе React и современных UI-библиотек",
+      "list3": "Реализация безопасных платёжных сценариев и автоматизация генерации документов",
+      "list4": "Проектирование сервисно-ориентированных и событийных систем с использованием Redis и RabbitMQ",
+      "list5": "Обеспечение качества кода и стабильности системы через тестирование и оптимизацию производительности"
+    },
+    "focus": "Мой подход основан на чистой архитектуре, предсказуемом поведении систем и решениях, которые масштабируются вместе с продуктом и командой."
+  },
+  "workExperience": {
+    "title": "Опыт работы",
+    "viewAll": "Просмотреть все",
+    "viewMore": "Показать больше",
+    "viewLess": "Показать меньше",
+    "genieWeb": {
+      "position": "Senior Full-Stack инженер (Independent Practice)",
+      "period": "Март 2024 – Май 2025",
+      "company": "GenieWeb",
+      "details": [
+        "Разрабатывал production-решения под NDA с фокусом на масштабируемость, надёжность и чистую архитектуру",
+        "Создавал real-time дашборды на React, Redux Toolkit и Socket.io для мониторинга и визуализации данных",
+        "Проектировал и поддерживал Node.js backend-сервисы с контейнеризацией (Docker) и проксированием через Nginx (reverse proxy / load balancing)",
+        "Автоматизировал CI/CD в Jenkins, внедряя стратегии rollback и recovery для безопасных релизов",
+        "Интегрировал платежные сценарии (Stripe, PayPal) и автоматизировал генерацию PDF-документов через webhooks и Puppeteer",
+        "Повышал качество кода unit/integration тестами (Jest, SuperTest) и оптимизировал производительность (asset optimization, lazy loading)"
+      ]
+    },
+    "pixeria": {
+      "position": "Full-Stack разработчик",
+      "period": "Сентябрь 2022 – Март 2024",
+      "company": "Pixeria LAB",
+      "details": [
+        "Спроектировал и разработал custom CRM-платформу с упором на масштабируемую и поддерживаемую архитектуру (Node.js, TypeScript, PostgreSQL, React)",
+        "Создавал переиспользуемые и консистентные UI-компоненты с использованием Ant Design и Bootstrap для ускорения разработки",
+        "Реализовал REST API с оптимизированным индексированием данных и стратегиями миграций",
+        "Выстроил стабильные процессы unit и integration тестирования с Jest и SuperTest",
+        "Управлял CI/CD-деплоем на базе Docker, обеспечивая стабильные и воспроизводимые релизы"
+      ]
+    },
+    "beeOnCode1": {
+      "position": "Full-Stack разработчик",
+      "period": "Январь 2022 – Август 2022",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Разрабатывал внутренние административные панели на React, Express.js и MongoDB",
+        "Реализовал real-time функциональность с использованием Socket.io для обновления данных в реальном времени",
+        "Создавал и поддерживал RESTful API сервисы и backend бизнес-логику на Node.js"
+      ]
+    },
+    "beeOnCode2": {
+      "position": "Frontend разработчик",
+      "period": "Октябрь 2020 – Декабрь 2021",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Рефакторил устаревшие frontend-кодовые базы, применяя современную архитектуру React и best practices",
+        "Разрабатывал адаптивные и доступные интерфейсы с использованием Material-UI, SCSS и EJS",
+        "Обеспечивал кроссбраузерную совместимость и соблюдение стандартов доступности",
+        "Тесно взаимодействовал с backend-разработчиками для корректной интеграции API и данных"
+      ]
+    },
+    "instructor": {
+      "position": "Преподаватель Front-end",
+      "period": "Июнь 2021 – Июль 2022",
+      "company": "Global IT",
+      "details": [
+        "Проводил структурированные обучающие программы по HTML, CSS, JavaScript и React для начинающих разработчиков",
+        "Разрабатывал практические учебные проекты и предоставлял индивидуальную менторскую поддержку"
+      ]
+    }
+  },
+  "techStack": {
+    "title": "Технологический стек",
+    "core": "Core Technologies",
+    "infraDevops": "Infrastructure & DevOps",
+    "dataMessaging": "Data & Messaging",
+    "testingQuality": "Testing & Quality",
+    "designCollab": "Design & Collaboration",
+    "viewMore": "Показать больше",
+    "viewAll": "Показать всё",
+    "viewLess": "Скрыть"
   },
   "sections": {
     "hero": {

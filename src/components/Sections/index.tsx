@@ -10,7 +10,6 @@ import AboutMeSection from '@/components/Sections/AboutMeSection';
 import ProjectsSection from '@/components/Sections/ProjectsSection';
 import WorkExperienceSection from '@/components/Sections/WorkExperienceSection';
 import TechStackSection from '@/components/Sections/TechStackSection';
-import GetInTouchSection from '@/components/Sections/GetInTouchSection';
 
 function renderById(id: number) {
   switch (id) {
@@ -19,13 +18,11 @@ function renderById(id: number) {
     case 0:
       return <AboutMeSection />;
     case 1:
-      return <ProjectsSection />;
-    case 2:
       return <WorkExperienceSection />;
+    case 2:
+      return <ProjectsSection />;
     case 3:
       return <TechStackSection />;
-    case 4:
-      return <GetInTouchSection />;
     default:
       return <HeroSection />;
   }

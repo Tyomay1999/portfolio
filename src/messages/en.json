@@ -1,13 +1,128 @@
 {
   "welcomeTxt": "Portfolio",
-  "summary": {
-    "intro": "Infrastructure is ready. Next, UI blocks will be added."
-  },
   "seo": {
     "home": {
       "title": "Portfolio",
       "description": "Personal portfolio website."
     }
+  },
+  "hero": {
+    "name": "Artyom Bordulanyuk",
+    "nickname": "Tyomay",
+    "role": "Full-Stack Web Developer",
+    "typingPhrases": [
+      "Full-Stack Web Developer",
+      "React • Next.js • Node.js",
+      "TypeScript • PostgreSQL • Docker",
+      "Building fast, scalable web products",
+      "Clean architecture • CI/CD"
+    ]
+  },
+  "contactIcons": {
+    "listAriaLabel": "Contact links",
+    "email": "Email",
+    "emailAria": "Send email",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Open WhatsApp",
+    "phone": "Phone",
+    "phoneAria": "Call phone",
+    "telegram": "Telegram",
+    "telegramAria": "Open Telegram",
+    "upwork": "Upwork",
+    "upworkAria": "Open Upwork",
+    "linkedin": "LinkedIn",
+    "linkedinAria": "Open LinkedIn",
+    "github": "GitHub",
+    "githubAria": "Open GitHub"
+  },
+  "toast": {
+    "emailCopied": "Email copied to clipboard",
+    "phoneCopied": "Phone number copied to clipboard"
+  },
+  "summary": {
+    "aboutMe": "About Me",
+    "intro": "Senior Full-Stack Engineer with over 5 years of hands-on experience designing and delivering scalable, reliable, and production-ready web systems.",
+    "specialization": "I work across the full stack, with a strong focus on system architecture, backend reliability, and long-term maintainability. My core stack includes React, Next.js, Node.js, Express.js, PostgreSQL, and MongoDB, complemented by solid experience in CI/CD automation, containerized deployments, and real-time systems.",
+    "experience": {
+      "list1": "Designing and operating fault-tolerant backend systems behind Nginx with Docker-based deployments",
+      "list2": "Building maintainable frontend architectures with React and modern UI libraries",
+      "list3": "Implementing secure payment flows and automated document generation",
+      "list4": "Architecting service-oriented and event-driven systems using Redis and RabbitMQ",
+      "list5": "Ensuring code quality and system stability through unit, integration testing, and performance optimization"
+    },
+    "focus": "I focus on clean architecture, predictable system behavior, and engineering solutions that scale with both product and team growth."
+  },
+  "workExperience": {
+    "title": "Work Experience",
+    "viewMore": "Show More",
+    "viewAll": "Show All",
+    "viewLess": "Show Less",
+    "genieWeb": {
+      "position": "Senior Full-Stack Engineer (Independent Practice)",
+      "period": "Mar 2024 – May 2025",
+      "company": "GenieWeb",
+      "details": [
+        "Delivered production-grade web platforms under NDA, focusing on scalability, reliability, and clean architecture",
+        "Designed and implemented real-time dashboards using React, Redux Toolkit, and Socket.io for monitoring and visualization",
+        "Built and operated Node.js backend services with containerized deployments (Docker) behind Nginx reverse proxy and load balancing",
+        "Implemented CI/CD automation with Jenkins, including rollback and recovery strategies to improve release safety",
+        "Integrated payment flows (Stripe, PayPal) and automated PDF document generation using webhooks and Puppeteer",
+        "Improved code quality through unit and integration testing (Jest, SuperTest) and performance optimizations (asset optimization, lazy loading)"
+      ]
+    },
+    "pixeria": {
+      "position": "Full-Stack Developer",
+      "period": "Sep 2022 – Mar 2024",
+      "company": "Pixeria LAB",
+      "details": [
+        "Designed and developed a custom CRM platform with a focus on scalability and maintainable architecture using Node.js, TypeScript, PostgreSQL, and React",
+        "Built reusable and consistent UI components with Ant Design and Bootstrap to support rapid feature development",
+        "Implemented RESTful APIs with optimized data indexing and migration strategies to support growing datasets",
+        "Established reliable unit and integration testing workflows using Jest and SuperTest",
+        "Managed Docker-based CI/CD deployments to ensure stable and repeatable releases"
+      ]
+    },
+    "beeOnCode1": {
+      "position": "Full-Stack Developer",
+      "period": "Jan 2022 – Aug 2022",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Developed internal administrative dashboards using React, Express.js, and MongoDB",
+        "Implemented real-time functionality with Socket.io to support live data updates",
+        "Built and maintained RESTful API services and backend business logic with Node.js"
+      ]
+    },
+    "beeOnCode2": {
+      "position": "Frontend Developer",
+      "period": "Oct 2020 – Dec 2021",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Refactored legacy frontend codebases using modern React architecture and best practices",
+        "Developed responsive and accessible user interfaces with Material-UI, SCSS, and EJS",
+        "Ensured cross-browser compatibility and compliance with accessibility standards",
+        "Collaborated closely with backend developers to integrate APIs and ensure data consistency"
+      ]
+    },
+    "instructor": {
+      "position": "Front-end Instructor",
+      "period": "Jun 2021 – Jul 2022",
+      "company": "Global IT",
+      "details": [
+        "Delivered structured training programs covering HTML, CSS, JavaScript, and React for aspiring developers",
+        "Designed hands-on learning projects and provided individual mentorship to support junior developers’ growth"
+      ]
+    }
+  },
+  "techStack": {
+    "title": "Technology Stack",
+    "core": "Core Technologies",
+    "infraDevops": "Infrastructure & DevOps",
+    "dataMessaging": "Data & Messaging",
+    "testingQuality": "Testing & Quality",
+    "designCollab": "Design & Collaboration",
+    "viewMore": "Show More",
+    "viewAll": "Show All",
+    "viewLess": "Show Less"
   },
   "sections": {
     "hero": {

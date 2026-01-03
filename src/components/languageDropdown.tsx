@@ -37,7 +37,6 @@ export default function LanguageDropdown() {
     return nextPath;
   };
 
-  // Side-effects are here (so handler stays “pure”)
   useEffect(() => {
     if (!mounted) return;
 

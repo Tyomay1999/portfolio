@@ -1,13 +1,145 @@
 {
   "welcomeTxt": "Պորտֆոլիո",
-  "summary": {
-    "intro": "Ենթակառուցվածքը պատրաստ է։ Հաջորդիվ կավելացվեն UI բլոկները։"
-  },
   "seo": {
     "home": {
       "title": "Պորտֆոլիո",
       "description": "Անձնական պորտֆոլիոյի կայք։"
     }
+  },
+
+  "hero": {
+    "name": "Artyom Bordulanyuk",
+    "nickname": "Tyomay",
+    "role": "Full-Stack վեբ ծրագրավորող",
+    "typingPhrases": [
+      "Full-Stack վեբ ծրագրավորող",
+      "React • Next.js • Node.js",
+      "TypeScript • PostgreSQL • Docker",
+      "Արագ և մասշտաբվող վեբ պրոդուկտներ",
+      "Մաքուր ճարտարապետություն • CI/CD"
+    ],
+    "cta": {
+      "projects": "Տեսնել նախագծերը",
+      "cv": "Ներբեռնել CV-ն"
+    }
+  },
+  "hero": {
+    "name": "Artyom Bordulanyuk",
+    "nickname": "Tyomay",
+    "role": "Full-Stack վեբ ծրագրավորող",
+    "typingPhrases": [
+      "Full-Stack վեբ ծրագրավորող",
+      "React • Next.js • Node.js",
+      "TypeScript • PostgreSQL • Docker",
+      "Արագ և մասշտաբվող վեբ պրոդուկտներ",
+      "Մաքուր ճարտարապետություն • CI/CD"
+    ]
+  },
+  "contactIcons": {
+    "listAriaLabel": "Կապի տարբերակներ",
+    "email": "Email",
+    "emailAria": "Գրել email",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Բացել WhatsApp",
+    "phone": "Հեռախոս",
+    "phoneAria": "Զանգել",
+    "telegram": "Telegram",
+    "telegramAria": "Բացել Telegram",
+    "upwork": "Upwork",
+    "upworkAria": "Բացել Upwork",
+    "linkedin": "LinkedIn",
+    "linkedinAria": "Բացել LinkedIn",
+    "github": "GitHub",
+    "githubAria": "Բացել GitHub"
+  },
+  "toast": {
+    "emailCopied": "Email-ը պատճենվեց",
+    "phoneCopied": "Հեռախոսի համարը պատճենվեց"
+  },
+  "summary": {
+    "aboutMe": "Իմ մասին",
+    "intro": "Senior Full-Stack ինժեներ՝ ավելի քան 5 տարվա գործնական փորձով մասշտաբավորվող և հուսալի վեբ համակարգերի նախագծման և իրականացման ոլորտում։",
+    "specialization": "Աշխատում եմ ամբողջ տեխնոլոգիական շղթայով՝ կենտրոնանալով համակարգերի ճարտարապետության, backend կայունության և երկարաժամկետ պահպանելիության վրա։ Իմ հիմնական տեխնոլոգիական ստեկը ներառում է React, Next.js, Node.js, Express.js, PostgreSQL և MongoDB, ինչպես նաև CI/CD ավտոմատացման, կոնտեյներիզացիայի և real-time համակարգերի փորձ։",
+    "experience": {
+      "list1": "Նախագծում և շահագործում եմ անխափան backend համակարգեր Nginx-ի և Docker-ի հիման վրա",
+      "list2": "Կառուցում եմ պահպանելի frontend ճարտարապետություն React-ի և ժամանակակից UI գրադարանների միջոցով",
+      "list3": "Իրականացնում եմ անվտանգ վճարային հոսքեր և փաստաթղթերի ավտոմատ գեներացում",
+      "list4": "Ճարտարապետում եմ ծառայահեն և event-driven համակարգեր Redis և RabbitMQ օգտագործմամբ",
+      "list5": "Ապահովում եմ կոդի որակն ու համակարգի կայունությունը թեստավորման և performance օպտիմալացման միջոցով"
+    },
+    "focus": "Իմ մոտեցումը հիմնված է մաքուր ճարտարապետության, կանխատեսելի համակարգային վարքագծի և լուծումների վրա, որոնք աճում են արտադրանքի և թիմի հետ միասին։"
+  },
+  "workExperience": {
+    "title": "Աշխատանքային փորձ",
+    "viewAll": "Դիտել բոլորը",
+    "viewMore": "Ցուցադրել ավելին",
+    "viewLess": "Թաքցնել",
+    "genieWeb": {
+      "position": "Senior Full-Stack ինժեներ (Independent Practice)",
+      "period": "Մարտ 2024 – Մայիս 2025",
+      "company": "GenieWeb",
+      "details": [
+        "Իրականացրել եմ production մակարդակի վեբ հարթակներ NDA պայմաններով՝ կենտրոնանալով մասշտաբավորման, հուսալիության և մաքուր ճարտարապետության վրա",
+        "Ստեղծել եմ real-time դաշբորդներ React, Redux Toolkit և Socket.io գործիքներով՝ մոնիթորինգի և տվյալների վիզուալիզացիայի համար",
+        "Կառուցել և սպասարկել եմ Node.js backend ծառայություններ՝ Docker կոնտեյներիզացիայով և Nginx reverse proxy / load balancing շերտով",
+        "Ավտոմատացրել եմ CI/CD գործընթացները Jenkins-ով՝ ներդնելով rollback և recovery ռազմավարություններ՝ թողարկումների անվտանգությունը բարձրացնելու համար",
+        "Ինտեգրել եմ վճարումներ (Stripe, PayPal) և ավտոմատացրել PDF փաստաթղթերի գեներացիան՝ օգտագործելով webhooks և Puppeteer",
+        "Բարձրացրել եմ կոդի որակը unit/integration թեստավորմամբ (Jest, SuperTest) և կատարել performance օպտիմալացումներ (asset optimization, lazy loading)"
+      ]
+    },
+    "pixeria": {
+      "position": "Full-Stack ծրագրավորող",
+      "period": "Սեպտեմբեր 2022 – Մարտ 2024",
+      "company": "Pixeria LAB",
+      "details": [
+        "Նախագծել և իրականացրել եմ custom CRM հարթակ՝ կենտրոնանալով մասշտաբավորվող և պահպանելի ճարտարապետության վրա (Node.js, TypeScript, PostgreSQL, React)",
+        "Մշակել եմ վերօգտագործվող և միասնական UI կոմպոնենտներ՝ Ant Design և Bootstrap գրադարաններով՝ արագ ֆիչերների զարգացման համար",
+        "Իրականացրել եմ REST API-ներ՝ օպտիմալ տվյալների ինդեքսավորմամբ և միգրացիայի ռազմավարություններով",
+        "Սահմանել եմ unit և integration թեստավորման կայուն գործընթացներ Jest և SuperTest գործիքներով",
+        "Կառավարել եմ Docker-ի վրա հիմնված CI/CD տեղակայումներ՝ ապահովելով կայուն և վերահսկելի թողարկումներ"
+      ]
+    },
+    "beeOnCode1": {
+      "position": "Full-Stack ծրագրավորող",
+      "period": "Հունվար 2022 – Օգոստոս 2022",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Մշակել եմ ներքին ադմինիստրատիվ վահանակներ React, Express.js և MongoDB տեխնոլոգիաներով",
+        "Իրականացրել եմ real-time ֆունկցիոնալություն Socket.io-ի միջոցով՝ ապահովելով կենդանի տվյալների թարմացում",
+        "Ստեղծել և սպասարկել եմ RESTful API ծառայություններ և backend բիզնես-տրամաբանություն Node.js-ով"
+      ]
+    },
+    "beeOnCode2": {
+      "position": "Frontend ծրագրավորող",
+      "period": "Հոկտեմբեր 2020 – Դեկտեմբեր 2021",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Վերակառուցել եմ հին frontend կոդային բազան՝ կիրառելով ժամանակակից React ճարտարապետություն և լավագույն պրակտիկաներ",
+        "Մշակել եմ լիովին ադապտիվ և հասանելի ինտերֆեյսներ Material-UI, SCSS և EJS գործիքներով",
+        "Ապահովել եմ բազմաբրաուզերային համատեղելիություն և accessibility ստանդարտների պահպանում",
+        "Սերտորեն համագործակցել եմ backend թիմի հետ՝ API ինտեգրման և տվյալների ամբողջականության ապահովման համար"
+      ]
+    },
+    "instructor": {
+      "position": "Front-end դասախոս",
+      "period": "Հունիս 2021 – Հուլիս 2022",
+      "company": "Global IT",
+      "details": [
+        "Վարել եմ կառուցվածքային դասընթացներ HTML, CSS, JavaScript և React թեմաներով սկսնակ ծրագրավորողների համար",
+        "Մշակել եմ գործնական ուսումնական նախագծեր և տրամադրել անհատական մենթորություն՝ ուսանողների մասնագիտական աճը խթանելու համար"
+      ]
+    }
+  },
+  "techStack": {
+    "title": "Տեխնոլոգիական փաթեթ",
+    "core": "Հիմնական տեխնոլոգիաներ",
+    "infraDevops": "Ինֆրաստრუქტուրա և DevOps",
+    "dataMessaging": "Տվյալներ և հաղորդագրումներ",
+    "testingQuality": "Թեստավորում և որակ",
+    "designCollab": "Դիզայն և համագործակցություն",
+    "viewMore": "Ցուցադրել ավելին",
+    "viewAll": "Դիտել բոլորը",
+    "viewLess": "Թաքցնել"
   },
   "sections": {
     "hero": {

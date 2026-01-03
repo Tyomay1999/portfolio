@@ -3,16 +3,35 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import StorySectionWrapper from '@/components/Sections/StorySectionWrapper';
+import TypingText from '@/components/hero/TypingText';
+import ContactIcons from '@/components/contact/ContactIcons';
 
 export default function HeroSection() {
-  const t = useTranslations('sections.hero');
+  const t = useTranslations('hero');
+  const typingPhrases = t.raw('typingPhrases') as string[];
 
   return (
     <StorySectionWrapper>
-      <div className="flex min-h-[100vh] items-center justify-center">
-        <div className="rounded-xl border border-slate-200 bg-white/70 p-6 text-slate-900 shadow-sm backdrop-blur dark:border-slate-700 dark:bg-slate-800/60 dark:text-slate-100">
-          <h2 className="text-xl font-semibold">{t('title')}</h2>
-          <p className="mt-2 opacity-80">{t('body')}</p>
+      <div className="fixed inset-0">
+        <div className="mx-auto flex h-full w-full max-w-[1200px] items-center justify-center px-4 pt-[calc(env(safe-area-inset-top,0px)+0.5rem)] pb-[calc(env(safe-area-inset-bottom,0px)+0.5rem)] text-center sm:px-6 md:px-12 lg:px-16 xl:px-20">
+          <div className="hero-parallax w-full">
+            <h1 className="mb-4 font-serif text-4xl leading-tight font-light tracking-wide text-slate-900 drop-shadow-sm md:text-6xl lg:text-7xl dark:text-slate-100">
+              {t('name')} <span className="whitespace-nowrap">({t('nickname')})</span>
+            </h1>
+
+            <div className="mt-4 flex h-8 items-center justify-center md:mt-6 md:h-10">
+              <TypingText phrases={typingPhrases} />
+            </div>
+
+            <div className="px-2 sm:px-4 md:px-6">
+              <ContactIcons />
+            </div>
+
+            <div className="mx-auto mt-8 h-0.5 w-24 bg-slate-300 dark:bg-slate-600" />
+            <h2 className="mt-6 font-sans text-lg tracking-wide text-slate-600 md:text-xl dark:text-slate-400">
+              {t('role')}
+            </h2>
+          </div>
         </div>
       </div>
     </StorySectionWrapper>

@@ -114,6 +114,63 @@
       ]
     }
   },
+  "projects": {
+    "title": "Проекты",
+    "hero": {
+      "name": "Decomplex Platform",
+      "description": "Готовая к продакшену full-stack платформа, объединяющая web, admin, mobile и backend. Построена на современной архитектуре с фокусом на масштабируемость и поддерживаемость.",
+      "meta": "Web • Admin • Mobile • Backend",
+      "cta": {
+        "expand": "Показать компоненты",
+        "collapse": "Свернуть компоненты"
+      }
+    },
+    "links": {
+      "live": "Live",
+      "github": "GitHub"
+    },
+    "toast": {
+      "opening": "Открываю {project}: {destination}..."
+    },
+    "components": [
+      {
+        "title": "Web Application",
+        "description": "Современный интерфейс на React с адаптивной версткой и гладким UX на всех устройствах.",
+        "tech": ["React 18", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "monitor",
+        "delay": 0.1
+      },
+      {
+        "title": "Admin Panel",
+        "description": "Панель управления с аналитикой, ролями и удобными сценариями администрирования.",
+        "tech": ["Next.js 14", "TypeScript", "PostgreSQL"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "settings",
+        "delay": 0.2
+      },
+      {
+        "title": "Mobile Application",
+        "description": "Кроссплатформенное мобильное приложение с упором на производительность, offline и push-уведомления.",
+        "tech": ["React Native", "TypeScript", "Expo"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "mobile",
+        "delay": 0.3
+      },
+      {
+        "title": "Backend API",
+        "description": "Масштабируемый API слой: аутентификация, кэширование и готовность к контейнерному деплою.",
+        "tech": ["Node.js", "Express", "PostgreSQL", "Redis", "Docker"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "server",
+        "delay": 0.4
+      }
+    ]
+  },
   "techStack": {
     "title": "Технологический стек",
     "core": "Core Technologies",

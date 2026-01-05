@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div className="fixed inset-0">
         <div className="mx-auto flex h-full w-full max-w-[1200px] items-center justify-center px-4 pt-[calc(env(safe-area-inset-top,0px)+0.5rem)] pb-[calc(env(safe-area-inset-bottom,0px)+0.5rem)] text-center sm:px-6 md:px-12 lg:px-16 xl:px-20">
           <div className="hero-parallax w-full">
-            <h1 className="mb-4 font-serif text-4xl leading-tight font-light tracking-wide text-slate-900 drop-shadow-sm md:text-6xl lg:text-7xl dark:text-slate-100">
+            <h1 className="mb-4 font-serif text-4xl leading-tight font-light tracking-wide drop-shadow-sm md:text-6xl lg:text-7xl">
               {t('name')} <span className="whitespace-nowrap">({t('nickname')})</span>
             </h1>
 
@@ -28,9 +28,7 @@ export default function HeroSection() {
             </div>
 
             <div className="mx-auto mt-8 h-0.5 w-24 bg-slate-300 dark:bg-slate-600" />
-            <h2 className="mt-6 font-sans text-lg tracking-wide text-slate-600 md:text-xl dark:text-slate-400">
-              {t('role')}
-            </h2>
+            <h2 className="mt-6 font-sans text-lg tracking-wide md:text-xl">{t('role')}</h2>
           </div>
         </div>
       </div>

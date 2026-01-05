@@ -4,7 +4,6 @@ export const SECTIONS = [
   { id: 1, key: 'projects', label: 'Projects' },
   { id: 2, key: 'experience', label: 'Work Experience' },
   { id: 3, key: 'stack', label: 'Tech Stack' },
-  { id: 4, key: 'contact', label: 'Get In Touch' },
 ] as const;
 
 export const MIN_SECTION = SECTIONS[0].id;

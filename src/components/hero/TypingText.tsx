@@ -20,7 +20,7 @@ export default function TypingText({
 
   return (
     <span className={`inline-flex items-center gap-1 ${className}`}>
-      <span ref={typingRef} className="typing-text text-slate-700 dark:text-slate-200" />
+      <span ref={typingRef} className="typing-text" />
       <span className={cursorClassName}>|</span>
     </span>
   );

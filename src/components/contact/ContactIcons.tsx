@@ -14,7 +14,7 @@ const ContactIcons: FC = () => {
       <div
         role="list"
         aria-label={t('listAriaLabel')}
-        className="mx-auto mt-8 mb-8 grid max-w-2xl grid-cols-4 justify-items-center gap-4 md:mb-12 md:grid-cols-8 md:gap-6"
+        className="mx-auto mt-6 mb-8 grid w-full max-w-[340px] grid-cols-5 justify-items-center gap-2 sm:mt-8 sm:max-w-2xl sm:gap-4 sm:pr-0 md:mb-12 md:gap-6"
       >
         {contactItems(showToast).map((item, idx) => (
           <button
@@ -22,18 +22,20 @@ const ContactIcons: FC = () => {
             type="button"
             role="listitem"
             aria-label={t(item.ariaLabelKey)}
-            className="contact-icon flex flex-col items-center text-slate-600 transition-colors duration-300 hover:text-blue-500 dark:text-white dark:hover:text-blue-500"
+            className="ui-icon-btn flex flex-col items-center"
             onClick={item.action}
           >
-            <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 shadow-lg hover:scale-105 hover:shadow-xl md:h-14 md:w-14 dark:bg-slate-800">
+            <div className="ui-icon-circle mb-2 flex h-12 w-12 items-center justify-center rounded-full md:h-14 md:w-14">
               {item.icon}
             </div>
-            <span className="font-sans text-xs text-slate-600 dark:text-slate-400">
+
+            <span className="text-xs" style={{ color: 'var(--ui-muted)' }}>
               {t(item.labelKey)}
             </span>
           </button>
         ))}
       </div>
+
       {ToastComponent}
     </>
   );

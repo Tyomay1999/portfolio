@@ -130,6 +130,63 @@
       ]
     }
   },
+  "projects": {
+    "title": "Նախագծեր",
+    "hero": {
+      "name": "Decomplex Platform",
+      "description": "Production-ready full-stack հարթակ, որը միավորում է web, admin, mobile և backend մասերը։ Կառուցված է ժամանակակից ճարտարապետությամբ՝ մասշտաբելիության և սպասարկելիության վրա շեշտադրմամբ։",
+      "meta": "Web • Admin • Mobile • Backend",
+      "cta": {
+        "expand": "Դիտել բաղադրիչները",
+        "collapse": "Փակել բաղադրիչները"
+      }
+    },
+    "links": {
+      "live": "Live",
+      "github": "GitHub"
+    },
+    "toast": {
+      "opening": "Բացում եմ {project}՝ {destination}..."
+    },
+    "components": [
+      {
+        "title": "Web Application",
+        "description": "React-ով կառուցված ժամանակակից UI՝ հարմարեցված տարբեր սարքերի համար։",
+        "tech": ["React 18", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "monitor",
+        "delay": 0.1
+      },
+      {
+        "title": "Admin Panel",
+        "description": "Կառավարման վահանակ՝ վերլուծություններով, իրավունքներով և կարգավորումներով։",
+        "tech": ["Next.js 14", "TypeScript", "PostgreSQL"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "settings",
+        "delay": 0.2
+      },
+      {
+        "title": "Mobile Application",
+        "description": "Կրոսպլատֆորմային հավելված՝ performance, offline և push ծանուցումներով։",
+        "tech": ["React Native", "TypeScript", "Expo"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "mobile",
+        "delay": 0.3
+      },
+      {
+        "title": "Backend API",
+        "description": "Մասշտաբելի API շերտ՝ authentication, caching և container-ready deploy։",
+        "tech": ["Node.js", "Express", "PostgreSQL", "Redis", "Docker"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "server",
+        "delay": 0.4
+      }
+    ]
+  },
   "techStack": {
     "title": "Տեխնոլոգիական փաթեթ",
     "core": "Հիմնական տեխնոլոգիաներ",

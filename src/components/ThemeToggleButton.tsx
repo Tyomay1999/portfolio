@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useTheme } from 'next-themes';
 import { useIsMounted } from '../hooks/useIsMounted';
 
@@ -8,23 +8,25 @@ export default function ThemeToggleButton() {
   const mounted = useIsMounted();
   const { resolvedTheme, setTheme } = useTheme();
 
-  if (!mounted) return null;
-
-  const toggleTheme = () => {
-    const current = resolvedTheme === 'dark' ? 'dark' : 'light';
-    const next = current === 'dark' ? 'light' : 'dark';
-
+  const toggleTheme = useCallback(() => {
+    const next = resolvedTheme === 'dark' ? 'light' : 'dark';
     setTheme(next);
     document.cookie = `theme=${next}; Path=/; Max-Age=31536000; SameSite=Lax`;
-  };
+  }, [resolvedTheme, setTheme]);
+
+  if (!mounted) return null;
+
+  const isDark = resolvedTheme === 'dark';
 
   return (
     <button
+      type="button"
       onClick={toggleTheme}
       aria-label="Toggle theme"
-      className="rounded-lg border border-slate-200 bg-white/80 p-2 backdrop-blur-sm transition-colors hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800/80 dark:hover:bg-slate-700"
+      aria-pressed={isDark}
+      className="ui-control rounded-lg p-2"
     >
-      {resolvedTheme === 'dark' ? (
+      {isDark ? (
         <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
           <path
             fillRule="evenodd"

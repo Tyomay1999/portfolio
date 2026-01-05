@@ -9,7 +9,7 @@ export default function Toast({ message, onClose }: { message: string; onClose: 
   }, [onClose]);
 
   return (
-    <div className="toast fixed top-5 left-5 z-50 rounded-lg bg-white px-4 py-3 text-sm text-gray-800 shadow-lg dark:bg-slate-900 dark:text-slate-100">
+    <div className="toast fixed top-5 left-5 z-50 rounded-lg bg-white px-4 py-3 text-sm shadow-lg dark:bg-slate-900">
       {message}
     </div>
   );

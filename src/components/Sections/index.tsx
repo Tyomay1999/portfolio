@@ -9,7 +9,7 @@ import HeroSection from '@/components/Sections/HeroSection';
 import AboutMeSection from '@/components/Sections/AboutMeSection';
 import ProjectsSection from '@/components/Sections/ProjectsSection';
 import WorkExperienceSection from '@/components/Sections/WorkExperienceSection';
-import TechStackSection from '@/components/Sections/TechStackSection';
+import TechStack from '@/components/Sections/techStack';
 
 function renderById(id: number) {
   switch (id) {
@@ -18,11 +18,11 @@ function renderById(id: number) {
     case 0:
       return <AboutMeSection />;
     case 1:
-      return <WorkExperienceSection />;
-    case 2:
       return <ProjectsSection />;
+    case 2:
+      return <WorkExperienceSection />;
     case 3:
-      return <TechStackSection />;
+      return <TechStack />;
     default:
       return <HeroSection />;
   }

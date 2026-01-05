@@ -9,12 +9,12 @@ export default function AboutMeSection() {
 
   return (
     <StorySectionWrapper>
-      <div className="text-my-light-text dark:text-my-dark-text mx-auto max-w-3xl px-2 text-center transition-colors duration-300 sm:px-4">
-        <h1 className="mb-8 font-serif text-4xl font-light text-slate-900 md:mb-12 md:text-4xl lg:text-6xl dark:text-slate-100">
+      <div className="mx-auto max-w-3xl px-2 text-center transition-colors duration-300 sm:px-4">
+        <h1 className="mb-8 font-serif text-4xl font-light md:mb-12 md:text-4xl lg:text-6xl">
           {t('aboutMe')}
         </h1>
 
-        <div className="space-y-6 font-sans text-base leading-relaxed text-slate-700 md:space-y-8 md:text-lg lg:text-xl dark:text-slate-300">
+        <div className="space-y-6 font-sans text-base leading-relaxed md:space-y-8 md:text-lg lg:text-xl">
           <p className="mb-6 text-justify">{t('intro')}</p>
           <p className="mb-6 text-justify">{t('specialization')}</p>
 

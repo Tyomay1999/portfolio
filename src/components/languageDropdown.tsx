@@ -39,9 +39,7 @@ export default function LanguageDropdown() {
 
   useEffect(() => {
     if (!mounted) return;
-
     localStorage.setItem('language', language);
-
     document.cookie = `NEXT_LOCALE=${language}; Path=/; Max-Age=31536000; SameSite=Lax`;
   }, [language, mounted]);
 
@@ -49,7 +47,7 @@ export default function LanguageDropdown() {
     if (!ddOpen) return;
 
     const onDoc = (e: MouseEvent) => {
-      if (ddRef.current && !ddRef.current?.contains(e.target as Node)) setDdOpen(false);
+      if (ddRef.current && !ddRef.current.contains(e.target as Node)) setDdOpen(false);
     };
 
     document.addEventListener('mousedown', onDoc);
@@ -77,7 +75,7 @@ export default function LanguageDropdown() {
         aria-expanded={ddOpen}
         aria-controls="lang-listbox"
         onClick={() => setDdOpen((v) => !v)}
-        className="flex min-w-[92px] items-center justify-between rounded-lg border border-slate-200 bg-white/80 px-3 py-2 text-sm text-slate-900 backdrop-blur-sm transition focus:ring-2 focus:ring-slate-400 focus:outline-none dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-100 dark:[color-scheme:dark]"
+        className="ui-control flex min-w-[92px] items-center justify-between rounded-lg px-3 py-2 text-sm focus:outline-none"
       >
         <span className="font-medium">{language.toUpperCase()}</span>
         <span className="ml-2">▾</span>
@@ -87,10 +85,11 @@ export default function LanguageDropdown() {
         <div
           id="lang-listbox"
           role="listbox"
-          className="absolute left-0 z-50 mt-1 max-h-60 w-[140px] overflow-auto rounded-xl border border-slate-200 bg-white shadow-xl dark:border-slate-700 dark:bg-slate-900 dark:[color-scheme:dark]"
+          className="ui-menu absolute left-0 z-50 mt-1 w-[140px] overflow-hidden rounded-xl"
         >
           {supportedLanguages.map((loc) => {
             const active = loc === language;
+
             return (
               <button
                 key={loc}
@@ -101,13 +100,20 @@ export default function LanguageDropdown() {
                   router.push(buildPathForLocale(loc));
                   setDdOpen(false);
                 }}
-                className={[
-                  'w-full px-4 py-2.5 text-left text-sm focus:outline-none',
-                  'text-slate-900 dark:text-slate-100',
-                  active
-                    ? 'bg-blue-50 dark:bg-blue-950/40'
-                    : 'hover:bg-blue-50 dark:hover:bg-slate-800/70',
-                ].join(' ')}
+                className="w-full px-4 py-2.5 text-left text-sm focus:outline-none"
+                style={{
+                  color: 'var(--ui-text)',
+                  background: active ? 'rgba(37, 99, 235, 0.12)' : 'transparent',
+                }}
+                onMouseEnter={(e) => {
+                  if (active) return;
+                  (e.currentTarget as HTMLButtonElement).style.background =
+                    'rgba(37, 99, 235, 0.10)';
+                }}
+                onMouseLeave={(e) => {
+                  if (active) return;
+                  (e.currentTarget as HTMLButtonElement).style.background = 'transparent';
+                }}
               >
                 {loc.toUpperCase()}
               </button>

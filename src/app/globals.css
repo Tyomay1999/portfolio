@@ -1,3 +1,4 @@
+@import '../styles/projects.css';
 @import 'tailwindcss';
 
 html,
@@ -7,12 +8,337 @@ body {
 
 body {
   background-color: white;
-  color: rgb(15 23 42);
+  color: rgb(15, 23, 42);
+}
+
+html.light body {
+  background-color: white;
+  color: rgb(15, 23, 42);
 }
 
 html.dark body {
-  background-color: rgb(15 23 42);
-  color: rgb(241 245 249);
+  background-color: rgb(15, 23, 42);
+  color: rgb(241, 245, 249);
+}
+
+:root {
+  --ui-text: rgb(15, 23, 42);
+  --ui-muted: rgba(15, 23, 42, 0.65);
+
+  --ui-control-bg: rgba(255, 255, 255, 0.72);
+  --ui-control-bg-hover: rgba(255, 255, 255, 0.92);
+  --ui-control-border: rgba(15, 23, 42, 0.12);
+  --ui-control-shadow: 0 10px 30px rgba(2, 6, 23, 0.1);
+
+  --ui-icon-bg: rgba(15, 23, 42, 0.04);
+  --ui-icon-bg-hover: rgba(15, 23, 42, 0.07);
+
+  --ui-accent: rgb(37, 99, 235);
+  --ui-divider: rgba(15, 23, 42, 0.14);
+
+  --ui-menu-bg: rgba(255, 255, 255, 0.92);
+  --ui-menu-border: rgba(15, 23, 42, 0.12);
+  --ui-menu-shadow: 0 18px 60px rgba(2, 6, 23, 0.16);
+
+  --ui-toast-bg: rgba(255, 255, 255, 0.92);
+  --ui-toast-border: rgba(15, 23, 42, 0.1);
+  --ui-toast-shadow: 0 18px 60px rgba(2, 6, 23, 0.16);
+
+  --ui-dot: rgba(15, 23, 42, 0.22);
+  --ui-dot-hover: rgba(15, 23, 42, 0.34);
+  --ui-dot-active: rgb(15, 23, 42);
+
+  --text-primary: rgb(15, 23, 42);
+  --text-secondary: rgba(15, 23, 42, 0.68);
+
+  --ui-surface: rgba(255, 255, 255, 0.62);
+  --ui-surface-strong: rgba(255, 255, 255, 0.88);
+  --ui-surface-hover: rgba(255, 255, 255, 0.96);
+
+  --ui-border: rgba(15, 23, 42, 0.12);
+  --ui-border-strong: rgba(15, 23, 42, 0.18);
+
+  --ui-shadow: 0 18px 50px rgba(2, 6, 23, 0.1);
+  --ui-shadow-strong: 0 22px 60px rgba(2, 6, 23, 0.14);
+
+  --ui-menu: rgba(255, 255, 255, 0.92);
+  --ui-menu-hover: rgba(15, 23, 42, 0.05);
+  --ui-menu-active: rgba(37, 99, 235, 0.1);
+
+  --ui-chip: rgba(15, 23, 42, 0.06);
+  --ui-chip-border: rgba(15, 23, 42, 0.1);
+}
+
+html.light {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+
+  --ui-text: rgb(241, 245, 249);
+  --ui-muted: rgba(241, 245, 249, 0.7);
+
+  --ui-control-bg: rgba(30, 41, 59, 0.72);
+  --ui-control-bg-hover: rgba(30, 41, 59, 0.92);
+  --ui-control-border: rgba(148, 163, 184, 0.18);
+  --ui-control-shadow: 0 10px 34px rgba(0, 0, 0, 0.35);
+
+  --ui-icon-bg: rgba(241, 245, 249, 0.06);
+  --ui-icon-bg-hover: rgba(241, 245, 249, 0.1);
+
+  --ui-divider: rgba(148, 163, 184, 0.26);
+
+  --ui-menu-bg: rgba(2, 6, 23, 0.82);
+  --ui-menu-border: rgba(148, 163, 184, 0.18);
+  --ui-menu-shadow: 0 18px 70px rgba(0, 0, 0, 0.55);
+
+  --ui-toast-bg: rgba(2, 6, 23, 0.82);
+  --ui-toast-border: rgba(148, 163, 184, 0.16);
+  --ui-toast-shadow: 0 18px 70px rgba(0, 0, 0, 0.55);
+
+  --ui-dot: rgba(241, 245, 249, 0.28);
+  --ui-dot-hover: rgba(241, 245, 249, 0.42);
+  --ui-dot-active: rgb(241, 245, 249);
+
+  --text-primary: rgb(241, 245, 249);
+  --text-secondary: rgba(241, 245, 249, 0.68);
+
+  --ui-surface: rgba(15, 23, 42, 0.58);
+  --ui-surface-strong: rgba(60, 71, 98, 0.78);
+  --ui-surface-hover: rgba(105, 110, 131, 0.86);
+
+  --ui-border: rgba(241, 245, 249, 0.14);
+  --ui-border-strong: rgba(241, 245, 249, 0.2);
+
+  --ui-shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
+  --ui-shadow-strong: 0 28px 90px rgba(0, 0, 0, 0.45);
+
+  --ui-menu: rgba(2, 6, 23, 0.92);
+  --ui-menu-hover: rgba(241, 245, 249, 0.06);
+  --ui-menu-active: rgba(59, 130, 246, 0.18);
+
+  --ui-chip: rgba(241, 245, 249, 0.08);
+  --ui-chip-border: rgba(241, 245, 249, 0.14);
+}
+
+.ui-control {
+  background: var(--ui-control-bg);
+  border: 1px solid var(--ui-control-border);
+  color: var(--ui-text);
+  box-shadow: var(--ui-control-shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease;
+}
+
+.ui-control:hover {
+  background: var(--ui-control-bg-hover);
+}
+
+.ui-icon-circle {
+  background: var(--ui-icon-bg);
+  box-shadow: var(--ui-control-shadow);
+  transition:
+    background 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.ui-icon-btn {
+  color: var(--ui-muted);
+  transition: color 180ms ease;
+}
+
+.ui-icon-btn:hover {
+  color: var(--ui-accent);
+}
+
+.ui-icon-btn:hover .ui-icon-circle {
+  background: var(--ui-icon-bg-hover);
+  transform: scale(1.06);
+}
+
+.ui-menu {
+  background: var(--ui-menu-bg);
+  border: 1px solid var(--ui-menu-border);
+  box-shadow: var(--ui-menu-shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ui-divider {
+  background: var(--ui-divider);
+}
+
+.ui-toast {
+  background: var(--ui-toast-bg);
+  border: 1px solid var(--ui-toast-border);
+  box-shadow: var(--ui-toast-shadow);
+  color: var(--ui-text);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ui-dot {
+  background: var(--ui-dot);
+  opacity: 0.9;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.ui-dot:hover {
+  background: var(--ui-dot-hover);
+  opacity: 1;
+}
+
+.ui-dot-active {
+  transform: scale(1.12);
+  opacity: 1;
+  box-shadow: 0 10px 26px rgba(2, 6, 23, 0.18);
+}
+
+.ui-dot-active {
+  background: var(--ui-dot-active);
+  box-shadow: var(--ui-shadow-sm);
+  --tw-ring-color: var(--ui-dot-active);
+}
+
+html.dark .ui-dot-active {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.ui-control {
+  background: var(--ui-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--ui-border);
+  box-shadow: var(--ui-shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.ui-control:hover {
+  background: var(--ui-surface-hover);
+  border-color: var(--ui-border-strong);
+  box-shadow: var(--ui-shadow-strong);
+}
+
+.ui-card {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-border);
+  box-shadow: var(--ui-shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.ui-card:hover {
+  background: var(--ui-surface-strong);
+  border-color: var(--ui-border-strong);
+  box-shadow: var(--ui-shadow-strong);
+  transform: scale(1.03);
+}
+
+.ui-menu {
+  background: var(--ui-menu);
+  border: 1px solid var(--ui-border);
+  box-shadow: var(--ui-shadow-strong);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ui-menu-item {
+  color: var(--text-primary);
+  transition: background 140ms ease;
+}
+
+.ui-menu-item:hover {
+  background: var(--ui-menu-hover);
+}
+
+.ui-menu-item-active {
+  background: var(--ui-menu-active);
+}
+
+.ui-muted {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 767px) {
+  .ui-control {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+.tech-card {
+  background: var(--ui-surface-strong);
+  border: 1px solid var(--ui-border);
+  box-shadow: 0 16px 40px rgba(2, 6, 23, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: translateY(0) scale(1);
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+}
+
+.tech-card:hover {
+  background: var(--ui-surface-hover);
+  border-color: var(--ui-border-strong);
+  box-shadow: 0 24px 70px rgba(2, 6, 23, 0.16);
+  transform: translateY(-8px) scale(1.02);
+}
+
+html.dark .tech-card {
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+}
+
+html.dark .tech-card:hover {
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.52);
+}
+
+.tech-card-title {
+  color: var(--text-primary);
+}
+
+.tech-card-icon-wrap {
+  border: 1px solid var(--ui-border);
+  background: rgba(15, 23, 42, 0.03);
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+}
+
+html.dark .tech-card-icon-wrap {
+  background: rgba(241, 245, 249, 0.06);
+}
+
+.tech-card:hover .tech-card-icon-wrap {
+  transform: scale(1.06);
+  border-color: var(--ui-border-strong);
 }
 
 @keyframes enterFromRight {

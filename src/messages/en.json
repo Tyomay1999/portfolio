@@ -113,6 +113,63 @@
       ]
     }
   },
+  "projects": {
+    "title": "Projects",
+    "hero": {
+      "name": "Decomplex Platform",
+      "description": "A production-ready full-stack platform combining web, admin, mobile, and backend systems. Built with modern architecture, scalability, and maintainability at its core.",
+      "meta": "Web • Admin • Mobile • Backend",
+      "cta": {
+        "expand": "View components",
+        "collapse": "Collapse components"
+      }
+    },
+    "links": {
+      "live": "Live",
+      "github": "GitHub"
+    },
+    "toast": {
+      "opening": "Opening {project} {destination}..."
+    },
+    "components": [
+      {
+        "title": "Web Application",
+        "description": "Modern React-based user interface with responsive layout and smooth user experience across devices.",
+        "tech": ["React 18", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "monitor",
+        "delay": 0.1
+      },
+      {
+        "title": "Admin Panel",
+        "description": "Management console with analytics, role-based access, and configuration workflows for operational teams.",
+        "tech": ["Next.js 14", "TypeScript", "PostgreSQL"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "settings",
+        "delay": 0.2
+      },
+      {
+        "title": "Mobile Application",
+        "description": "Cross-platform mobile experience focused on performance, offline readiness, and push notifications.",
+        "tech": ["React Native", "TypeScript", "Expo"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "mobile",
+        "delay": 0.3
+      },
+      {
+        "title": "Backend API",
+        "description": "Scalable API layer with authentication, caching, and containerized deployment-ready setup.",
+        "tech": ["Node.js", "Express", "PostgreSQL", "Redis", "Docker"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "server",
+        "delay": 0.4
+      }
+    ]
+  },
   "techStack": {
     "title": "Technology Stack",
     "core": "Core Technologies",

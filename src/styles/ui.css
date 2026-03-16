@@ -1,0 +1,136 @@
+.ui-control {
+  background: var(--ui-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--ui-border);
+  box-shadow: var(--ui-shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    color 180ms ease;
+}
+
+.ui-control:hover {
+  background: var(--ui-surface-hover);
+  border-color: var(--ui-border-strong);
+  box-shadow: var(--ui-shadow-strong);
+}
+
+.ui-card {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-border);
+  box-shadow: var(--ui-shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.ui-card:hover {
+  background: var(--ui-surface-strong);
+  border-color: var(--ui-border-strong);
+  box-shadow: var(--ui-shadow-strong);
+  transform: scale(1.03);
+}
+
+.ui-menu {
+  background: var(--ui-menu);
+  border: 1px solid var(--ui-border);
+  box-shadow: var(--ui-shadow-strong);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ui-menu-item {
+  color: var(--text-primary);
+  transition: background 140ms ease;
+}
+
+.ui-menu-item:hover {
+  background: var(--ui-menu-hover);
+}
+
+.ui-menu-item-active {
+  background: var(--ui-menu-active);
+}
+
+.ui-divider {
+  background: var(--ui-divider);
+}
+
+.ui-toast {
+  background: var(--ui-toast-bg);
+  border: 1px solid var(--ui-toast-border);
+  box-shadow: var(--ui-toast-shadow);
+  color: var(--ui-text);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ui-dot {
+  background: var(--ui-dot);
+  opacity: 0.9;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.ui-dot:hover {
+  background: var(--ui-dot-hover);
+  opacity: 1;
+}
+
+.ui-dot-active {
+  background: var(--ui-dot-active);
+  transform: scale(1.12);
+  opacity: 1;
+  --tw-ring-color: var(--ui-dot-active);
+  box-shadow: 0 10px 26px rgba(2, 6, 23, 0.18);
+}
+
+html.dark .ui-dot-active {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.ui-muted {
+  color: var(--text-secondary);
+}
+
+.ui-icon-circle {
+  background: var(--ui-icon-bg);
+  box-shadow: var(--ui-shadow);
+  transition:
+    background 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.ui-icon-btn {
+  color: var(--ui-muted);
+  transition: color 180ms ease;
+}
+
+.ui-icon-btn:hover {
+  color: var(--ui-accent);
+}
+
+.ui-icon-btn:hover .ui-icon-circle {
+  background: var(--ui-icon-bg-hover);
+  transform: scale(1.06);
+  box-shadow: var(--ui-shadow-strong);
+}
+
+@media (max-width: 767px) {
+  .ui-control {
+    backdrop-filter: none;
+  }
+}

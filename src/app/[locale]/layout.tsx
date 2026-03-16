@@ -1,27 +1,29 @@
 import type { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { languages, defaultLocale } from '../../i18n/settings';
-import type { Locale } from '../../i18n/settings';
+import Providers from '../Providers';
+import { pickLocale } from '@/lib/seo';
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 type Props = {
   children: ReactNode;
   params: Promise<{ locale: string }>;
 };
 
-export function generateStaticParams() {
-  return languages.map((locale) => ({ locale }));
-}
-
 export default async function LocaleLayout({ children, params }: Props) {
-  const { locale: localeRaw } = await params;
-  const locale = (languages.includes(localeRaw as Locale) ? localeRaw : defaultLocale) as Locale;
-
-  const messages = await getMessages({ locale });
+  const payload = await params;
+  const locale = pickLocale(payload.locale);
+  const messages = (await import(`../../messages/${locale}.json`)).default as Record<
+    string,
+    unknown
+  >;
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      {children}
-    </NextIntlClientProvider>
+    <Providers>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        {children}
+      </NextIntlClientProvider>
+    </Providers>
   );
 }

@@ -1,12 +1,207 @@
 {
   "welcomeTxt": "Портфолио",
-  "summary": {
-    "intro": "Инфраструктура готова. Блоки пользовательского интерфейса будут добавлены позже."
-  },
   "seo": {
     "home": {
-      "title": "Портфолио",
-      "description": "Персональный сайт-портфолио."
+      "title": "Артём Бордуланюк — Senior Full-Stack инженер | Архитектура масштабируемых веб-систем",
+      "description": "Senior Full-Stack инженер, специализирующийся на архитектуре масштабируемых веб-платформ, надёжности backend-сервисов и production-разработке. Портфолио с реальными проектами frontend, backend, DevOps и real-time систем.",
+      "keywords": "Артём Бордуланюк, Senior Full-Stack инженер, Full Stack разработчик портфолио, архитектура веб-систем, масштабируемые системы, React, Next.js, Node.js, TypeScript, PostgreSQL, MongoDB, Redis, RabbitMQ, Docker, CI/CD, системный дизайн",
+      "personJobTitle": "Senior Full-Stack инженер",
+      "sameAs": "https://github.com/Tyomay1999, https://www.linkedin.com/in/tyomay/"
     }
+  },
+  "hero": {
+    "name": "Artyom Bordulanyuk",
+    "nickname": "Tyomay",
+    "role": "Full-Stack инженер",
+    "typingPhrases": [
+      "Senior Full-Stack инженер",
+      "Архитектура масштабируемых веб-систем",
+      "React • Next.js • Node.js • TypeScript",
+      "Надёжный backend • DevOps • CI/CD",
+      "Production-разработка и системный дизайн"
+    ]
+  },
+  "contactIcons": {
+    "listAriaLabel": "Способы связи",
+    "email": "Email",
+    "emailAria": "Написать на email",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Открыть WhatsApp",
+    "phone": "Телефон",
+    "phoneAria": "Позвонить",
+    "telegram": "Telegram",
+    "telegramAria": "Открыть Telegram",
+    "upwork": "Upwork",
+    "upworkAria": "Открыть Upwork",
+    "linkedin": "LinkedIn",
+    "linkedinAria": "Открыть LinkedIn",
+    "github": "GitHub",
+    "githubAria": "Открыть GitHub"
+  },
+  "toast": {
+    "emailCopied": "Email скопирован в буфер обмена",
+    "phoneCopied": "Номер телефона скопирован в буфер обмена"
+  },
+
+  "summary": {
+    "aboutMe": "Обо мне",
+    "intro": "Senior Full-Stack инженер с более чем 5-летним практическим опытом проектирования, разработки и эксплуатации масштабируемых и надёжных веб-систем production-уровня.",
+    "specialization": "Работаю по всему технологическому стеку с акцентом на архитектуру систем, устойчивость backend-сервисов и долгосрочную поддерживаемость решений. Основной стек включает React, Next.js, Node.js, Express.js, PostgreSQL и MongoDB, а также практический опыт автоматизации CI/CD, контейнеризации, построения распределённых сервисов и real-time систем.",
+    "experience": {
+      "list1": "Проектирование и эксплуатация отказоустойчивых backend-систем за Nginx с использованием контейнерной инфраструктуры Docker",
+      "list2": "Построение масштабируемой и поддерживаемой frontend-архитектуры на базе React и современных UI-экосистем",
+      "list3": "Реализация безопасных платёжных интеграций и автоматизация процессов генерации документов",
+      "list4": "Архитектура сервисно-ориентированных и событийных решений с использованием Redis и RabbitMQ",
+      "list5": "Обеспечение стабильности систем и качества кода через выстроенные стратегии тестирования и оптимизацию производительности"
+    },
+    "focus": "Мой инженерный подход основан на принципах чистой архитектуры, предсказуемого поведения систем и создании решений, способных эффективно масштабироваться вместе с ростом продукта и команды."
+  },
+  "workExperience": {
+    "title": "Опыт работы",
+    "viewAll": "Просмотреть все",
+    "viewMore": "Показать больше",
+    "viewLess": "Показать меньше",
+    "genieWeb": {
+      "position": "Senior Full-Stack инженер (Independent Practice)",
+      "period": "Март 2024 – настоящее время",
+      "company": "GenieWeb",
+      "details": [
+        "Разрабатывал и выводил в production web-платформы под NDA с фокусом на масштабируемость, надёжность и чистую архитектуру",
+        "Проектировал и реализовывал real-time дашборды на React, Redux Toolkit и Socket.io для мониторинга, аналитики и визуализации операционных данных",
+        "Создавал и поддерживал backend-сервисы на Node.js с контейнеризацией (Docker) и балансировкой нагрузки через Nginx reverse proxy",
+        "Автоматизировал процессы CI/CD в Jenkins, внедряя стратегии rollback и recovery для повышения стабильности релизов",
+        "Интегрировал безопасные платёжные сценарии (Stripe, PayPal) и автоматизировал генерацию PDF-документов через webhooks и Puppeteer",
+        "Повышал качество и надёжность кода через системное использование unit и integration тестирования (Jest, SuperTest) и оптимизацию производительности (asset optimization, lazy loading)",
+        "Участвовал во всех этапах жизненного цикла систем: архитектурные решения, инфраструктурная настройка и обеспечение стабильной работы в production",
+        "Технологический стек: TypeScript, React, Redux Toolkit, Node.js, Express.js, PostgreSQL, MongoDB, Docker, Nginx, Jenkins, Socket.io, Jest, SuperTest, Stripe, PayPal"
+      ]
+    },
+    "pixeria": {
+      "position": "Full-Stack разработчик",
+      "period": "Сентябрь 2022 – Март 2024",
+      "company": "Pixeria LAB",
+      "details": [
+        "Спроектировал и разработал custom CRM-платформу с упором на масштабируемую и поддерживаемую архитектуру с использованием Node.js, TypeScript, PostgreSQL и React",
+        "Создавал переиспользуемые и консистентные UI-компоненты на базе Ant Design и Bootstrap для ускорения вывода функциональности",
+        "Реализовал REST API с оптимизированным индексированием данных и продуманными стратегиями миграций для поддержки роста объёмов данных",
+        "Выстроил стабильные процессы unit и integration тестирования с использованием Jest и SuperTest",
+        "Управлял CI/CD-деплоем на базе Docker, обеспечивая предсказуемые и воспроизводимые релизы",
+        "Технологический стек: TypeScript, React, Node.js, Express.js, PostgreSQL, Ant Design, Bootstrap, Docker, Jest, SuperTest"
+      ]
+    },
+    "beeOnCode1": {
+      "position": "Full-Stack разработчик",
+      "period": "Январь 2022 – Август 2022",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Разрабатывал внутренние административные панели с использованием React, Express.js и MongoDB",
+        "Реализовал real-time синхронизацию данных через Socket.io для поддержки живых обновлений интерфейса",
+        "Создавал и поддерживал RESTful API-сервисы и backend-бизнес-логику на Node.js",
+        "Технологический стек: React, Node.js, Express.js, MongoDB, Socket.io"
+      ]
+    },
+    "beeOnCode2": {
+      "position": "Frontend разработчик",
+      "period": "Октябрь 2020 – Декабрь 2021",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Проводил рефакторинг устаревших frontend-кодовых баз, внедряя современную архитектуру React и performance-ориентированные best practices",
+        "Разрабатывал адаптивные и доступные пользовательские интерфейсы с использованием Material-UI, SCSS и EJS",
+        "Обеспечивал кроссбраузерную совместимость и соответствие стандартам доступности",
+        "Тесно взаимодействовал с backend-разработчиками для корректной интеграции API и согласованности данных",
+        "Технологический стек: React, Material-UI, SCSS, EJS"
+      ]
+    },
+    "instructor": {
+      "position": "Преподаватель Front-end",
+      "period": "Июнь 2021 – Июль 2022",
+      "company": "Global IT",
+      "details": [
+        "Проводил структурированные обучающие программы по HTML, CSS, JavaScript и React для начинающих разработчиков",
+        "Разрабатывал практические учебные проекты и предоставлял индивидуальную менторскую поддержку для ускорения профессионального роста студентов",
+        "Технологический стек: HTML, CSS, JavaScript, React"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Проекты",
+    "moreLabel": "Подробнее",
+    "hero": {
+      "name": "Decomplex Platform",
+      "description": "Модульная full-stack платформа production-уровня, объединяющая web-клиент, административную консоль, мобильное приложение и backend-сервисы. Архитектура построена с учётом масштабируемости, real-time взаимодействий и предсказуемого поведения системы под нагрузкой.",
+      "meta": "Web • Admin • Mobile • Backend",
+      "cta": {
+        "expand": "Показать компоненты",
+        "collapse": "Свернуть компоненты"
+      }
+    },
+    "links": {
+      "live": "Live",
+      "github": "GitHub"
+    },
+    "toast": {
+      "opening": "Открываю {project}: {destination}..."
+    },
+    "components": [
+      {
+        "title": "Web Application",
+        "description": "Спроектирован масштабируемый клиентский интерфейс с модульным управлением состоянием, сервер-ориентированными потоками данных и адаптивной стратегией рендеринга. Оптимизирована производительность, навигация и стабильность пользовательского взаимодействия на различных устройствах.",
+        "tech": ["Next.js", "React", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "monitor",
+        "delay": 0.1,
+        "D_ImgUrl": "/DE_W_D.png",
+        "L_ImgUrl": "/DE_W_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/ru/web"
+      },
+      {
+        "title": "Admin Panel",
+        "description": "Разработана управленческая консоль с поддержкой аналитики, ролевых сценариев доступа и конфигурационных процессов. Реализована структурированная визуализация данных и orchestration состояний для эффективной работы операционных команд.",
+        "tech": ["React", "TypeScript", "React Router", "Ant Design", "Redux Toolkit"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "settings",
+        "delay": 0.2,
+        "D_ImgUrl": "/DE_A_D.png",
+        "L_ImgUrl": "/DE_A_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/ru/admin"
+      },
+      {
+        "title": "Mobile Application",
+        "description": "Реализовано кроссплатформенное мобильное приложение с учётом offline-сценариев, push-обновлений и оптимизированной архитектуры навигации. Обеспечена стабильная работа на устройствах с различными характеристиками и сетевыми условиями.",
+        "tech": ["React Native", "Expo", "React Navigation", "TypeScript"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "mobile",
+        "delay": 0.3,
+        "D_ImgUrl": "/DE_M_D.png",
+        "L_ImgUrl": "/DE_M_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/ru/mobile"
+      },
+      {
+        "title": "Backend API",
+        "description": "Разработан сервис-ориентированный API-слой с поддержкой аутентификации, кэширования, фоновых процессов и real-time взаимодействий. Архитектура подготовлена к контейнерным развертываниям, горизонтальному масштабированию и устойчивой работе при конкурентных нагрузках.",
+        "tech": ["Node.js", "Express", "TypeScript", "PostgreSQL", "Redis"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "server",
+        "delay": 0.4,
+        "D_ImgUrl": "/DE_B_D.png",
+        "L_ImgUrl": "/DE_B_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/ru/backend"
+      }
+    ]
+  },
+  "techStack": {
+    "title": "Технологический стек",
+    "core": "Основные технологии",
+    "infraDevops": "Инфраструктура и DevOps",
+    "dataMessaging": "Данные и системы обмена сообщениями",
+    "testingQuality": "Тестирование и качество",
+    "designCollab": "Дизайн и взаимодействие",
+    "viewMore": "Показать больше",
+    "viewAll": "Показать всё",
+    "viewLess": "Скрыть"
   }
 }

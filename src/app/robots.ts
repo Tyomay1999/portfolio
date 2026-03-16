@@ -1,8 +1,17 @@
 import type { MetadataRoute } from 'next';
+import { absoluteUrl } from '@/lib/seo';
+
+export const dynamic = 'force-static';
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [{ userAgent: '*', allow: '/' }],
-    sitemap: `${process.env.NEXT_PUBLIC_SITE_URL}/sitemap.xml`,
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/_next/'],
+      },
+    ],
+    sitemap: absoluteUrl('/sitemap.xml'),
   };
 }

@@ -1,16 +1,13 @@
 @import 'tailwindcss';
 
-html,
-body {
-  height: 100%;
-}
+@import '../styles/base.css';
+@import '../styles/tokens.css';
+@import '../styles/ui.css';
 
-body {
-  background-color: white;
-  color: rgb(15 23 42);
-}
+@import '../styles/utilities/animations.css';
+@import '../styles/utilities/scrollbar.css';
 
-html.dark body {
-  background-color: rgb(15 23 42);
-  color: rgb(241 245 249);
-}
+@import '../styles/components/tech.css';
+@import '../styles/components/toast.css';
+
+@import '../styles/sections/projects.css';

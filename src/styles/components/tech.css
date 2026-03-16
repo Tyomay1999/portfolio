@@ -1,0 +1,50 @@
+.tech-card {
+  background: var(--ui-surface-strong);
+  border: 1px solid var(--ui-border);
+  box-shadow: 0 16px 40px rgba(2, 6, 23, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: translateY(0) scale(1);
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+}
+
+.tech-card:hover {
+  background: var(--ui-surface-hover);
+  border-color: var(--ui-border-strong);
+  box-shadow: 0 24px 70px rgba(2, 6, 23, 0.16);
+  transform: translateY(-8px) scale(1.02);
+}
+
+html.dark .tech-card {
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+}
+
+html.dark .tech-card:hover {
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.52);
+}
+
+.tech-card-title {
+  color: var(--text-primary);
+}
+
+.tech-card-icon-wrap {
+  border: 1px solid var(--ui-border);
+  background: rgba(15, 23, 42, 0.03);
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+}
+
+html.dark .tech-card-icon-wrap {
+  background: rgba(241, 245, 249, 0.06);
+}
+
+.tech-card:hover .tech-card-icon-wrap {
+  transform: scale(1.06);
+  border-color: var(--ui-border-strong);
+}

@@ -1,0 +1,91 @@
+:root {
+  --ui-text: rgb(15, 23, 42);
+  --ui-muted: #0f172a;
+
+  --ui-accent: rgb(37, 99, 235);
+
+  --text-primary: rgb(15, 23, 42);
+  --text-secondary: rgba(15, 23, 42, 0.68);
+
+  --ui-surface: rgba(255, 255, 255, 0.62);
+  --ui-surface-strong: rgba(255, 255, 255, 0.88);
+  --ui-surface-hover: rgba(255, 255, 255, 0.96);
+
+  --ui-border: rgba(15, 23, 42, 0.12);
+  --ui-border-strong: rgba(15, 23, 42, 0.18);
+
+  --ui-divider: rgba(15, 23, 42, 0.14);
+
+  --ui-shadow: 0 18px 50px rgba(2, 6, 23, 0.1);
+  --ui-shadow-strong: 0 22px 60px rgba(2, 6, 23, 0.14);
+
+  --ui-menu: rgba(255, 255, 255, 0.92);
+  --ui-menu-hover: rgba(15, 23, 42, 0.05);
+  --ui-menu-active: rgba(37, 99, 235, 0.1);
+
+  --ui-toast-bg: rgba(255, 255, 255, 0.92);
+  --ui-toast-border: rgba(15, 23, 42, 0.1);
+  --ui-toast-shadow: 0 18px 60px rgba(2, 6, 23, 0.16);
+
+  --ui-dot: rgba(15, 23, 42, 0.22);
+  --ui-dot-hover: rgba(15, 23, 42, 0.34);
+  --ui-dot-active: rgb(15, 23, 42);
+
+  --ui-chip: rgba(15, 23, 42, 0.06);
+  --ui-chip-border: rgba(15, 23, 42, 0.1);
+
+  --ui-shadow-sm: 0 10px 26px rgba(2, 6, 23, 0.12);
+  --ui-shadow-md: 0 18px 50px rgba(2, 6, 23, 0.14);
+
+  --ui-icon-bg: rgba(15, 23, 42, 0.04);
+  --ui-icon-bg-hover: rgba(15, 23, 42, 0.07);
+  --ui-icon-border: rgba(15, 23, 42, 0.12);
+}
+
+html.light {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+
+  --ui-text: rgb(241, 245, 249);
+  --ui-muted: rgba(255, 255, 255, 0.7);
+
+  --text-primary: rgb(241, 245, 249);
+  --text-secondary: rgba(241, 245, 249, 0.68);
+
+  --ui-divider: rgba(148, 163, 184, 0.26);
+
+  --ui-surface: rgba(15, 23, 42, 0.58);
+  --ui-surface-strong: rgba(60, 71, 98, 0.78);
+  --ui-surface-hover: rgba(105, 110, 131, 0.86);
+
+  --ui-border: rgba(241, 245, 249, 0.14);
+  --ui-border-strong: rgba(241, 245, 249, 0.2);
+
+  --ui-shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
+  --ui-shadow-strong: 0 28px 90px rgba(0, 0, 0, 0.45);
+
+  --ui-menu: rgba(2, 6, 23, 0.92);
+  --ui-menu-hover: rgba(241, 245, 249, 0.06);
+  --ui-menu-active: rgba(59, 130, 246, 0.18);
+
+  --ui-toast-bg: rgba(2, 6, 23, 0.82);
+  --ui-toast-border: rgba(148, 163, 184, 0.16);
+  --ui-toast-shadow: 0 18px 70px rgba(0, 0, 0, 0.55);
+
+  --ui-dot: rgba(241, 245, 249, 0.28);
+  --ui-dot-hover: rgba(241, 245, 249, 0.42);
+  --ui-dot-active: rgb(241, 245, 249);
+
+  --ui-chip: rgba(241, 245, 249, 0.08);
+  --ui-chip-border: rgba(241, 245, 249, 0.14);
+
+  --ui-shadow-sm: 0 16px 40px rgba(0, 0, 0, 0.45);
+  --ui-shadow-md: 0 22px 70px rgba(0, 0, 0, 0.55);
+
+  --ui-icon-bg: rgba(241, 245, 249, 0.06);
+  --ui-icon-bg-hover: rgba(241, 245, 249, 0.1);
+  --ui-icon-border: rgba(241, 245, 249, 0.14);
+}

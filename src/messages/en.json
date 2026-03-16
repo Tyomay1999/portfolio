@@ -1,12 +1,206 @@
 {
   "welcomeTxt": "Portfolio",
-  "summary": {
-    "intro": "Infrastructure is ready. UI blocks will be added next."
-  },
   "seo": {
     "home": {
-      "title": "Portfolio",
-      "description": "Personal portfolio website."
+      "title": "Artyom Bordulanyuk — Senior Full-Stack Engineer | System Architecture & Scalable Web Platforms",
+      "description": "Senior Full-Stack Engineer specializing in scalable web architecture, backend reliability, and production-ready system design. Portfolio featuring real-world projects across frontend, backend, DevOps, and real-time platforms.",
+      "keywords": "Artyom Bordulanyuk, Senior Full-Stack Engineer, Full Stack Developer Portfolio, System Architecture, Scalable Web Systems, React, Next.js, Node.js, TypeScript, PostgreSQL, MongoDB, Redis, RabbitMQ, Docker, CI/CD, Web Platform Engineer",
+      "personJobTitle": "Senior Full-Stack Engineer",
+      "sameAs": "https://github.com/Tyomay1999, https://www.linkedin.com/in/tyomay/"
     }
+  },
+  "hero": {
+    "name": "Artyom Bordulanyuk",
+    "nickname": "Tyomay",
+    "role": "Full-Stack Engineer",
+    "typingPhrases": [
+      "Senior Full-Stack Engineer",
+      "Scalable Web Architecture • System Design",
+      "React • Next.js • Node.js • TypeScript",
+      "Backend Reliability • DevOps • CI/CD",
+      "Building production-ready platforms"
+    ]
+  },
+  "contactIcons": {
+    "listAriaLabel": "Contact links",
+    "email": "Email",
+    "emailAria": "Send email",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Open WhatsApp",
+    "phone": "Phone",
+    "phoneAria": "Call phone",
+    "telegram": "Telegram",
+    "telegramAria": "Open Telegram",
+    "upwork": "Upwork",
+    "upworkAria": "Open Upwork",
+    "linkedin": "LinkedIn",
+    "linkedinAria": "Open LinkedIn",
+    "github": "GitHub",
+    "githubAria": "Open GitHub"
+  },
+  "toast": {
+    "emailCopied": "Email copied to clipboard",
+    "phoneCopied": "Phone number copied to clipboard"
+  },
+  "summary": {
+    "aboutMe": "About Me",
+    "intro": "Senior Full-Stack Engineer with 5+ years of hands-on experience designing, delivering, and operating scalable, reliable, production-grade web systems.",
+    "specialization": "I work across the full stack with a strong emphasis on system architecture, backend reliability, and long-term maintainability. My core stack includes React, Next.js, Node.js, Express.js, PostgreSQL, and MongoDB, complemented by solid experience in CI/CD automation, containerized deployments, distributed services, and real-time systems.",
+    "experience": {
+      "list1": "Designing and operating fault-tolerant backend services behind Nginx with containerized Docker-based infrastructure",
+      "list2": "Building scalable and maintainable frontend architectures using React and modern UI ecosystems",
+      "list3": "Implementing secure payment integrations and automated document generation pipelines",
+      "list4": "Architecting service-oriented and event-driven solutions leveraging Redis and RabbitMQ",
+      "list5": "Driving system stability and code quality through structured testing strategies and performance optimization"
+    },
+    "focus": "My engineering approach is centered on clean architecture, predictable system behavior, and building solutions that scale effectively with both product complexity and team growth."
+  },
+  "workExperience": {
+    "title": "Work Experience",
+    "viewMore": "Show More",
+    "viewAll": "Show All",
+    "viewLess": "Show Less",
+    "genieWeb": {
+      "position": "Senior Full-Stack Engineer (Independent Practice)",
+      "period": "Mar 2024 – Present",
+      "company": "GenieWeb",
+      "details": [
+        "Delivered multiple production-grade web platforms under NDA, focusing on scalability, reliability, and clean architecture",
+        "Designed and implemented real-time dashboards using React, Redux Toolkit, and Socket.io for monitoring, analytics, and operational visibility",
+        "Built and operated Node.js backend services with containerized deployments (Docker) behind Nginx reverse proxy and load balancing",
+        "Implemented CI/CD pipelines with Jenkins, including rollback and recovery strategies to improve deployment stability and release safety",
+        "Integrated secure payment workflows (Stripe, PayPal) and automated PDF document generation using webhooks and Puppeteer",
+        "Improved code quality and release confidence through structured unit and integration testing (Jest, SuperTest) and performance optimizations (asset optimization, lazy loading)",
+        "Contributed to full-cycle system delivery including architecture decisions, infrastructure configuration, and production runtime stability",
+        "Tech Stack: TypeScript, React, Redux Toolkit, Node.js, Express.js, PostgreSQL, MongoDB, Docker, Nginx, Jenkins, Socket.io, Jest, SuperTest, Stripe, PayPal"
+      ]
+    },
+    "pixeria": {
+      "position": "Full-Stack Developer",
+      "period": "Sep 2022 – Mar 2024",
+      "company": "Pixeria LAB",
+      "details": [
+        "Designed and developed a custom CRM platform with a focus on scalable and maintainable architecture using Node.js, TypeScript, PostgreSQL, and React",
+        "Built reusable and consistent UI component systems with Ant Design and Bootstrap to support rapid feature delivery",
+        "Implemented RESTful APIs with optimized data indexing and migration strategies to support growing datasets and business expansion",
+        "Established reliable unit and integration testing workflows using Jest and SuperTest",
+        "Managed Docker-based CI/CD deployments to ensure stable, repeatable, and predictable releases",
+        "Tech Stack: TypeScript, React, Node.js, Express.js, PostgreSQL, Ant Design, Bootstrap, Docker, Jest, SuperTest"
+      ]
+    },
+    "beeOnCode1": {
+      "position": "Full-Stack Developer",
+      "period": "Jan 2022 – Aug 2022",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Developed internal administrative dashboards using React, Express.js, and MongoDB",
+        "Implemented real-time data synchronization using Socket.io to support live operational updates",
+        "Built and maintained RESTful APIs and backend business logic using Node.js",
+        "Tech Stack: React, Node.js, Express.js, MongoDB, Socket.io"
+      ]
+    },
+    "beeOnCode2": {
+      "position": "Frontend Developer",
+      "period": "Oct 2020 – Dec 2021",
+      "company": "BeeOnCode LLC",
+      "details": [
+        "Led refactoring of legacy frontend codebases using modern React architecture and performance-oriented best practices",
+        "Developed responsive and accessible user interfaces with Material-UI, SCSS, and EJS",
+        "Ensured cross-browser compatibility and compliance with accessibility standards",
+        "Collaborated closely with backend developers to integrate APIs and maintain data consistency across systems",
+        "Tech Stack: React, Material-UI, SCSS, EJS"
+      ]
+    },
+    "instructor": {
+      "position": "Front-end Instructor",
+      "period": "Jun 2021 – Jul 2022",
+      "company": "Global IT",
+      "details": [
+        "Delivered structured training programs covering HTML, CSS, JavaScript, and React for aspiring developers",
+        "Designed practical learning projects and provided individual mentorship to support junior developers’ technical growth",
+        "Tech Stack: HTML, CSS, JavaScript, React"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "moreLabel": "Read more",
+    "hero": {
+      "name": "Decomplex Platform",
+      "description": "A modular production-grade full-stack platform composed of independently deployable web, admin, mobile, and backend services. Designed around scalable architecture, real-time data flows, and predictable operational behaviour.",
+      "meta": "Web • Admin • Mobile • Backend",
+      "cta": {
+        "expand": "View components",
+        "collapse": "Collapse components"
+      }
+    },
+    "links": {
+      "live": "Live",
+      "github": "GitHub"
+    },
+    "toast": {
+      "opening": "Opening {project} {destination}..."
+    },
+    "components": [
+      {
+        "title": "Web Application",
+        "description": "Architected a scalable client application with modular state management, server-driven data flows, and responsive layout strategy. Optimized rendering performance, routing transitions, and user interaction consistency across devices.",
+        "tech": ["Next.js", "React", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "monitor",
+        "delay": 0.1,
+        "D_ImgUrl": "/DE_W_D.png",
+        "L_ImgUrl": "/DE_W_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/en/web"
+      },
+      {
+        "title": "Admin Panel",
+        "description": "Designed an operational management console supporting role-based workflows, analytical dashboards, and configuration pipelines. Implemented structured data visualization and state orchestration for high-density administrative interactions.",
+        "tech": ["React", "TypeScript", "React Router", "Ant Design", "Redux Toolkit"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "settings",
+        "delay": 0.2,
+        "D_ImgUrl": "/DE_A_D.png",
+        "L_ImgUrl": "/DE_A_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/en/admin"
+      },
+      {
+        "title": "Mobile Application",
+        "description": "Implemented a cross-platform mobile client with offline-aware data handling, push-driven updates, and performance-focused navigation architecture. Ensured consistent experience across varying device capabilities and network conditions.",
+        "tech": ["React Native", "Expo", "React Navigation", "TypeScript"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textLeft",
+        "icon": "mobile",
+        "delay": 0.3,
+        "D_ImgUrl": "/DE_M_D.png",
+        "L_ImgUrl": "/DE_M_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/en/mobile"
+      },
+      {
+        "title": "Backend API",
+        "description": "Developed a service-oriented API layer handling authentication, caching, background processing, and real-time communication. Structured for containerized deployment, horizontal scaling, and resilient runtime behaviour under concurrent workloads.",
+        "tech": ["Node.js", "Express", "TypeScript", "PostgreSQL", "Redis"],
+        "links": [{ "key": "live" }, { "key": "github" }],
+        "layout": "textRight",
+        "icon": "server",
+        "delay": 0.4,
+        "D_ImgUrl": "/DE_B_D.png",
+        "L_ImgUrl": "/DE_B_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/en/backend"
+      }
+    ]
+  },
+  "techStack": {
+    "title": "Technology Stack",
+    "core": "Core Technologies",
+    "infraDevops": "Infrastructure & DevOps",
+    "dataMessaging": "Data & Messaging",
+    "testingQuality": "Testing & Quality",
+    "designCollab": "Design & Collaboration",
+    "viewMore": "Show More",
+    "viewAll": "Show All",
+    "viewLess": "Show Less"
   }
 }

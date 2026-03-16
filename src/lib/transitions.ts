@@ -1,13 +1,4 @@
-export type TransitionPreset =
-  | 'slide-left'
-  | 'slide-right'
-  | 'slide-up'
-  | 'slide-down'
-  | 'zoom-in'
-  | 'zoom-out'
-  | 'blur';
-
-const PRESETS: TransitionPreset[] = [
+export const PRESETS = [
   'slide-left',
   'slide-right',
   'slide-up',
@@ -15,14 +6,12 @@ const PRESETS: TransitionPreset[] = [
   'zoom-in',
   'zoom-out',
   'blur',
-];
+] as const;
+
+export type TransitionPreset = (typeof PRESETS)[number];
 
 export function pickRandomPreset(prev?: TransitionPreset): TransitionPreset {
-  if (PRESETS.length <= 1) return PRESETS[0];
-
-  let next = PRESETS[Math.floor(Math.random() * PRESETS.length)];
-  while (prev && next === prev) {
-    next = PRESETS[Math.floor(Math.random() * PRESETS.length)];
-  }
-  return next;
+  const pool = prev ? PRESETS.filter((p) => p !== prev) : PRESETS;
+  const idx = Math.floor(Math.random() * pool.length);
+  return pool[idx] ?? PRESETS[0];
 }

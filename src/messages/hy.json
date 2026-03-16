@@ -2,38 +2,28 @@
   "welcomeTxt": "Պորտֆոլիո",
   "seo": {
     "home": {
-      "title": "Պորտֆոլիո",
-      "description": "Անձնական պորտֆոլիոյի կայք։"
+      "title": "Արտյոմ Բորդուլանյուկ — Senior Full-Stack ինժեներ | Մասշտաբելի վեբ համակարգերի ճարտարապետություն",
+      "description": "Senior Full-Stack ինժեներ՝ մասնագիտացած մասշտաբելի վեբ հարթակների ճարտարապետության, backend համակարգերի հուսալիության և production մակարդակի լուծումների նախագծման մեջ։ Պորտֆոլիո՝ frontend, backend, DevOps և real-time նախագծերով։",
+      "keywords": "Արտյոմ Բորդուլանյուկ, Senior Full-Stack ինժեներ, full stack ծրագրավորող պորտֆոլիո, վեբ համակարգերի ճարտարապետություն, մասշտաբելի համակարգեր, React, Next.js, Node.js, TypeScript, PostgreSQL, MongoDB, Redis, RabbitMQ, Docker, CI/CD",
+      "personJobTitle": "Senior Full-Stack ինժեներ",
+      "sameAs": "https://github.com/Tyomay1999, https://www.linkedin.com/in/tyomay/"
     }
   },
-
   "hero": {
     "name": "Artyom Bordulanyuk",
     "nickname": "Tyomay",
-    "role": "Full-Stack վեբ ծրագրավորող",
+    "role": "Full-Stack ինժեներ",
     "typingPhrases": [
-      "Full-Stack վեբ ծրագրավորող",
-      "React • Next.js • Node.js",
-      "TypeScript • PostgreSQL • Docker",
-      "Արագ և մասշտաբվող վեբ պրոդուկտներ",
-      "Մաքուր ճարտարապետություն • CI/CD"
+      "Senior Full-Stack ինժեներ",
+      "Մասշտաբելի վեբ համակարգերի ճարտարապետություն",
+      "React • Next.js • Node.js • TypeScript",
+      "Հուսալի backend • DevOps • CI/CD",
+      "Production մակարդակի համակարգերի մշակում"
     ],
     "cta": {
       "projects": "Տեսնել նախագծերը",
       "cv": "Ներբեռնել CV-ն"
     }
-  },
-  "hero": {
-    "name": "Artyom Bordulanyuk",
-    "nickname": "Tyomay",
-    "role": "Full-Stack վեբ ծրագրավորող",
-    "typingPhrases": [
-      "Full-Stack վեբ ծրագրավորող",
-      "React • Next.js • Node.js",
-      "TypeScript • PostgreSQL • Docker",
-      "Արագ և մասշտաբվող վեբ պրոդուկտներ",
-      "Մաքուր ճարտարապետություն • CI/CD"
-    ]
   },
   "contactIcons": {
     "listAriaLabel": "Կապի տարբերակներ",
@@ -58,16 +48,16 @@
   },
   "summary": {
     "aboutMe": "Իմ մասին",
-    "intro": "Senior Full-Stack ինժեներ՝ ավելի քան 5 տարվա գործնական փորձով մասշտաբավորվող և հուսալի վեբ համակարգերի նախագծման և իրականացման ոլորտում։",
-    "specialization": "Աշխատում եմ ամբողջ տեխնոլոգիական շղթայով՝ կենտրոնանալով համակարգերի ճարտարապետության, backend կայունության և երկարաժամկետ պահպանելիության վրա։ Իմ հիմնական տեխնոլոգիական ստեկը ներառում է React, Next.js, Node.js, Express.js, PostgreSQL և MongoDB, ինչպես նաև CI/CD ավտոմատացման, կոնտեյներիզացիայի և real-time համակարգերի փորձ։",
+    "intro": "Senior Full-Stack ինժեներ՝ ավելի քան 5 տարվա գործնական փորձով production մակարդակի մասշտաբավորվող և հուսալի վեբ համակարգերի նախագծման, իրականացման և շահագործման ոլորտում։",
+    "specialization": "Աշխատում եմ ամբողջ տեխնոլոգիական շղթայով՝ կենտրոնանալով համակարգերի ճարտարապետության, backend ծառայությունների կայունության և լուծումների երկարաժամկետ պահպանելիության վրա։ Իմ հիմնական տեխնոլոգիական ստեկը ներառում է React, Next.js, Node.js, Express.js, PostgreSQL և MongoDB, ինչպես նաև փորձ ունեմ CI/CD ավտոմատացման, կոնտեյներային ենթակառուցվածքների, բաշխված ծառայությունների և real-time համակարգերի նախագծման մեջ։",
     "experience": {
-      "list1": "Նախագծում և շահագործում եմ անխափան backend համակարգեր Nginx-ի և Docker-ի հիման վրա",
-      "list2": "Կառուցում եմ պահպանելի frontend ճարտարապետություն React-ի և ժամանակակից UI գրադարանների միջոցով",
-      "list3": "Իրականացնում եմ անվտանգ վճարային հոսքեր և փաստաթղթերի ավտոմատ գեներացում",
-      "list4": "Ճարտարապետում եմ ծառայահեն և event-driven համակարգեր Redis և RabbitMQ օգտագործմամբ",
-      "list5": "Ապահովում եմ կոդի որակն ու համակարգի կայունությունը թեստավորման և performance օպտիմալացման միջոցով"
+      "list1": "Նախագծում և շահագործում եմ անխափան backend համակարգեր Nginx-ի ետևում՝ օգտագործելով Docker կոնտեյներային ենթակառուցվածք",
+      "list2": "Կառուցում եմ մասշտաբավորվող և պահպանելի frontend ճարտարապետություն React-ի և ժամանակակից UI էկոհամակարգերի միջոցով",
+      "list3": "Իրականացնում եմ անվտանգ վճարային ինտեգրացիաներ և փաստաթղթերի ավտոմատ գեներացման գործընթացներ",
+      "list4": "Ճարտարապետում եմ service-oriented և event-driven լուծումներ Redis և RabbitMQ տեխնոլոգիաներով",
+      "list5": "Ապահովում եմ համակարգերի կայունությունն ու կոդի որակը՝ կիրառելով համակարգված թեստավորման ռազմավարություններ և կատարողականության օպտիմալացում"
     },
-    "focus": "Իմ մոտեցումը հիմնված է մաքուր ճարտարապետության, կանխատեսելի համակարգային վարքագծի և լուծումների վրա, որոնք աճում են արտադրանքի և թիմի հետ միասին։"
+    "focus": "Իմ ինժեներական մոտեցումը հիմնված է մաքուր ճարտարապետության, կանխատեսելի համակարգային վարքագծի և այնպիսի լուծումների կառուցման վրա, որոնք կայունորեն մասշտաբվում են ինչպես արտադրանքի, այնպես էլ թիմի զարգացման հետ միասին։"
   },
   "workExperience": {
     "title": "Աշխատանքային փորձ",
@@ -76,15 +66,17 @@
     "viewLess": "Թաքցնել",
     "genieWeb": {
       "position": "Senior Full-Stack ինժեներ (Independent Practice)",
-      "period": "Մարտ 2024 – Մայիս 2025",
+      "period": "Մարտ 2024 – մինչ օրս",
       "company": "GenieWeb",
       "details": [
-        "Իրականացրել եմ production մակարդակի վեբ հարթակներ NDA պայմաններով՝ կենտրոնանալով մասշտաբավորման, հուսալիության և մաքուր ճարտարապետության վրա",
-        "Ստեղծել եմ real-time դաշբորդներ React, Redux Toolkit և Socket.io գործիքներով՝ մոնիթորինգի և տվյալների վիզուալիզացիայի համար",
-        "Կառուցել և սպասարկել եմ Node.js backend ծառայություններ՝ Docker կոնտեյներիզացիայով և Nginx reverse proxy / load balancing շերտով",
-        "Ավտոմատացրել եմ CI/CD գործընթացները Jenkins-ով՝ ներդնելով rollback և recovery ռազմավարություններ՝ թողարկումների անվտանգությունը բարձրացնելու համար",
-        "Ինտեգրել եմ վճարումներ (Stripe, PayPal) և ավտոմատացրել PDF փաստաթղթերի գեներացիան՝ օգտագործելով webhooks և Puppeteer",
-        "Բարձրացրել եմ կոդի որակը unit/integration թեստավորմամբ (Jest, SuperTest) և կատարել performance օպտիմալացումներ (asset optimization, lazy loading)"
+        "Մշակել և production միջավայրում ներդրել եմ վեբ հարթակներ NDA պայմաններով՝ կենտրոնանալով մասշտաբավորման, հուսալիության և մաքուր ճարտարապետության վրա",
+        "Նախագծել և իրականացրել եմ real-time դաշբորդներ React, Redux Toolkit և Socket.io գործիքներով՝ մոնիթորինգի, վերլուծության և տվյալների վիզուալիզացիայի համար",
+        "Կառուցել և ապահովել եմ Node.js backend ծառայությունների կայուն աշխատանքը՝ Docker կոնտեյներիզացիայով և Nginx reverse proxy / load balancing շերտով",
+        "Ավտոմատացրել եմ CI/CD գործընթացները Jenkins-ով՝ ներդնելով rollback և recovery ռազմավարություններ՝ թողարկումների անվտանգությունն ու կանխատեսելիությունը բարձրացնելու համար",
+        "Ինտեգրել եմ անվտանգ վճարային հոսքեր (Stripe, PayPal) և ավտոմատացրել PDF փաստաթղթերի գեներացիան՝ օգտագործելով webhooks և Puppeteer",
+        "Բարձրացրել եմ կոդի որակը և համակարգի հուսալիությունը unit և integration թեստավորման միջոցով (Jest, SuperTest) և կատարել performance օպտիմալացումներ (asset optimization, lazy loading)",
+        "Մասնակցել եմ համակարգերի ամբողջ lifecycle-ին՝ ճարտարապետական որոշումների կայացումից մինչև production միջավայրի կայուն աշխատանքի ապահովում",
+        "Տեխնոլոգիական ստեք․ TypeScript, React, Redux Toolkit, Node.js, Express.js, PostgreSQL, MongoDB, Docker, Nginx, Jenkins, Socket.io, Jest, SuperTest, Stripe, PayPal"
       ]
     },
     "pixeria": {
@@ -92,11 +84,12 @@
       "period": "Սեպտեմբեր 2022 – Մարտ 2024",
       "company": "Pixeria LAB",
       "details": [
-        "Նախագծել և իրականացրել եմ custom CRM հարթակ՝ կենտրոնանալով մասշտաբավորվող և պահպանելի ճարտարապետության վրա (Node.js, TypeScript, PostgreSQL, React)",
-        "Մշակել եմ վերօգտագործվող և միասնական UI կոմպոնենտներ՝ Ant Design և Bootstrap գրադարաններով՝ արագ ֆիչերների զարգացման համար",
-        "Իրականացրել եմ REST API-ներ՝ օպտիմալ տվյալների ինդեքսավորմամբ և միգրացիայի ռազմավարություններով",
-        "Սահմանել եմ unit և integration թեստավորման կայուն գործընթացներ Jest և SuperTest գործիքներով",
-        "Կառավարել եմ Docker-ի վրա հիմնված CI/CD տեղակայումներ՝ ապահովելով կայուն և վերահսկելի թողարկումներ"
+        "Նախագծել և մշակել եմ custom CRM հարթակ՝ կենտրոնանալով մասշտաբավորվող և պահպանելի համակարգային ճարտարապետության վրա (Node.js, TypeScript, PostgreSQL, React)",
+        "Մշակել եմ վերօգտագործվող և միասնական UI կոմպոնենտներ Ant Design և Bootstrap գրադարաններով՝ արագ ֆունկցիոնալության ներդրման համար",
+        "Իրականացրել եմ REST API-ներ՝ օպտիմալ տվյալների ինդեքսավորմամբ և միգրացիաների հստակ ռազմավարություններով՝ մեծ տվյալների ծավալների աջակցման համար",
+        "Կառուցել եմ կայուն unit և integration թեստավորման գործընթացներ՝ օգտագործելով Jest և SuperTest",
+        "Կառավարել եմ Docker-ի վրա հիմնված CI/CD տեղակայումներ՝ ապահովելով կանխատեսելի և վերահսկելի թողարկումներ",
+        "Տեխնոլոգիական ստեք․ TypeScript, React, Node.js, Express.js, PostgreSQL, Ant Design, Bootstrap, Docker, Jest, SuperTest"
       ]
     },
     "beeOnCode1": {
@@ -104,9 +97,10 @@
       "period": "Հունվար 2022 – Օգոստոս 2022",
       "company": "BeeOnCode LLC",
       "details": [
-        "Մշակել եմ ներքին ադմինիստրատիվ վահանակներ React, Express.js և MongoDB տեխնոլոգիաներով",
-        "Իրականացրել եմ real-time ֆունկցիոնալություն Socket.io-ի միջոցով՝ ապահովելով կենդանի տվյալների թարմացում",
-        "Ստեղծել և սպասարկել եմ RESTful API ծառայություններ և backend բիզնես-տրամաբանություն Node.js-ով"
+        "Մշակել եմ ներքին ադմինիստրատիվ վահանակներ՝ օգտագործելով React, Express.js և MongoDB",
+        "Իրականացրել եմ real-time տվյալների սինխրոնացում Socket.io տեխնոլոգիայով՝ ապահովելով ինտերֆեյսի կենդանի թարմացումներ",
+        "Ստեղծել և սպասարկել եմ RESTful API ծառայություններ և backend բիզնես տրամաբանություն Node.js միջավայրում",
+        "Տեխնոլոգիական ստեք․ React, Node.js, Express.js, MongoDB, Socket.io"
       ]
     },
     "beeOnCode2": {
@@ -114,10 +108,11 @@
       "period": "Հոկտեմբեր 2020 – Դեկտեմբեր 2021",
       "company": "BeeOnCode LLC",
       "details": [
-        "Վերակառուցել եմ հին frontend կոդային բազան՝ կիրառելով ժամանակակից React ճարտարապետություն և լավագույն պրակտիկաներ",
+        "Կատարել եմ հին frontend կոդային բազաների խորքային ռեֆակտորինգ՝ կիրառելով ժամանակակից React ճարտարապետություն և performance-կենտրոնացված best practices",
         "Մշակել եմ լիովին ադապտիվ և հասանելի ինտերֆեյսներ Material-UI, SCSS և EJS գործիքներով",
         "Ապահովել եմ բազմաբրաուզերային համատեղելիություն և accessibility ստանդարտների պահպանում",
-        "Սերտորեն համագործակցել եմ backend թիմի հետ՝ API ինտեգրման և տվյալների ամբողջականության ապահովման համար"
+        "Սերտ համագործակցել եմ backend թիմի հետ՝ API ինտեգրման և տվյալների ամբողջականության ապահովման նպատակով",
+        "Տեխնոլոգիական ստեք․ React, Material-UI, SCSS, EJS"
       ]
     },
     "instructor": {
@@ -126,15 +121,17 @@
       "company": "Global IT",
       "details": [
         "Վարել եմ կառուցվածքային դասընթացներ HTML, CSS, JavaScript և React թեմաներով սկսնակ ծրագրավորողների համար",
-        "Մշակել եմ գործնական ուսումնական նախագծեր և տրամադրել անհատական մենթորություն՝ ուսանողների մասնագիտական աճը խթանելու համար"
+        "Մշակել եմ գործնական ուսումնական նախագծեր և տրամադրել անհատական մենթորություն՝ ուսանողների մասնագիտական աճը արագացնելու նպատակով",
+        "Տեխնոլոգիական ստեք․ HTML, CSS, JavaScript, React"
       ]
     }
   },
   "projects": {
     "title": "Նախագծեր",
+    "moreLabel": "Ավելին",
     "hero": {
       "name": "Decomplex Platform",
-      "description": "Production-ready full-stack հարթակ, որը միավորում է web, admin, mobile և backend մասերը։ Կառուցված է ժամանակակից ճարտարապետությամբ՝ մասշտաբելիության և սպասարկելիության վրա շեշտադրմամբ։",
+      "description": "Production մակարդակի մոդուլային full-stack հարթակ, որը միավորում է web-հարթակը, ադմինիստրատիվ կոնսոլը, բջջային հավելվածը և backend ծառայությունները։ Ճարտարապետությունը կառուցված է մասշտաբավորման, real-time փոխգործակցության և համակարգի կանխատեսելի վարքագծի ապահովման սկզբունքներով։",
       "meta": "Web • Admin • Mobile • Backend",
       "cta": {
         "expand": "Դիտել բաղադրիչները",
@@ -151,77 +148,63 @@
     "components": [
       {
         "title": "Web Application",
-        "description": "React-ով կառուցված ժամանակակից UI՝ հարմարեցված տարբեր սարքերի համար։",
-        "tech": ["React 18", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+        "description": "Մասշտաբավորվող հաճախորդային ինտերֆեյս՝ կառուցված մոդուլային state կառավարման և server-կենտրոնացված տվյալների հոսքերի սկզբունքներով։ Օպտիմալացված է ռենդերինգի ռազմավարությունը, նավիգացիան և օգտագործողի փորձը տարբեր սարքերում և բեռնվածության պայմաններում։",
+        "tech": ["Next.js", "React", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
         "links": [{ "key": "live" }, { "key": "github" }],
         "layout": "textLeft",
         "icon": "monitor",
-        "delay": 0.1
+        "delay": 0.1,
+        "D_ImgUrl": "/DE_W_D.png",
+        "L_ImgUrl": "/DE_W_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/hy/web"
       },
       {
         "title": "Admin Panel",
-        "description": "Կառավարման վահանակ՝ վերլուծություններով, իրավունքներով և կարգավորումներով։",
-        "tech": ["Next.js 14", "TypeScript", "PostgreSQL"],
+        "description": "Կառավարման կոնսոլ՝ նախատեսված տվյալների վիզուալիզացիայի, դերերի կառավարման և կոնֆիգուրացիոն աշխատանքային հոսքերի համար։ Ապահովում է օպերացիոն թիմերի արդյունավետ փոխգործակցություն և համակարգի կարգավորելի վարքագիծ։",
+        "tech": ["React", "TypeScript", "React Router", "Ant Design", "Redux Toolkit"],
         "links": [{ "key": "live" }, { "key": "github" }],
         "layout": "textRight",
         "icon": "settings",
-        "delay": 0.2
+        "delay": 0.2,
+        "D_ImgUrl": "/DE_A_D.png",
+        "L_ImgUrl": "/DE_A_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/hy/admin"
       },
       {
         "title": "Mobile Application",
-        "description": "Կրոսպլատֆորմային հավելված՝ performance, offline և push ծանուցումներով։",
-        "tech": ["React Native", "TypeScript", "Expo"],
+        "description": "Կրոսպլատֆորմային բջջային հավելված՝ նախագծված offline սցենարների, push թարմացումների և օպտիմալ նավիգացիոն ճարտարապետության հաշվառմամբ։ Ապահովում է կայուն աշխատանք տարբեր սարքերում և ցանցային պայմաններում։",
+        "tech": ["React Native", "Expo", "React Navigation", "TypeScript"],
         "links": [{ "key": "live" }, { "key": "github" }],
         "layout": "textLeft",
         "icon": "mobile",
-        "delay": 0.3
+        "delay": 0.3,
+        "D_ImgUrl": "/DE_M_D.png",
+        "L_ImgUrl": "/DE_M_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/hy/mobile"
       },
       {
         "title": "Backend API",
-        "description": "Մասշտաբելի API շերտ՝ authentication, caching և container-ready deploy։",
-        "tech": ["Node.js", "Express", "PostgreSQL", "Redis", "Docker"],
+        "description": "Service-կենտրոնացված API շերտ՝ նույնականացման, caching մեխանիզմների և ֆոնային գործընթացների աջակցությամբ։ Ճարտարապետությունը պատրաստ է կոնտեյներային տեղակայման, հորիզոնական մասշտաբավորման և բարձր մրցակցային բեռնվածությունների պայմաններում կայուն աշխատանքի համար։",
+        "tech": ["Node.js", "Express", "TypeScript", "PostgreSQL", "Redis"],
         "links": [{ "key": "live" }, { "key": "github" }],
         "layout": "textRight",
         "icon": "server",
-        "delay": 0.4
+        "delay": 0.4,
+        "D_ImgUrl": "/DE_B_D.png",
+        "L_ImgUrl": "/DE_B_L.png",
+        "moreUrl": "https://decomplex.tyomay.dev/hy/backend"
       }
     ]
   },
   "techStack": {
-    "title": "Տեխնոլոգիական փաթեթ",
+    "title": "Տեխնոլոգիական ստեկ",
     "core": "Հիմնական տեխնոլոգիաներ",
-    "infraDevops": "Ինֆրաստრუქტուրա և DevOps",
-    "dataMessaging": "Տվյալներ և հաղորդագրումներ",
-    "testingQuality": "Թեստավորում և որակ",
+    "infraDevops": "Ենթակառուցվածք և DevOps",
+    "dataMessaging": "Տվյալներ և հաղորդագրությունների համակարգեր",
+    "testingQuality": "Թեստավորում և որակի ապահովում",
     "designCollab": "Դիզայն և համագործակցություն",
-    "viewMore": "Ցուցադրել ավելին",
-    "viewAll": "Դիտել բոլորը",
+    "viewMore": "Ցույց տալ ավելին",
+    "viewAll": "Ցույց տալ բոլորը",
     "viewLess": "Թաքցնել"
-  },
-  "sections": {
-    "hero": {
-      "title": "Բարի գալուստ",
-      "body": "Սա Hero բաժինն է։"
-    },
-    "about": {
-      "title": "Իմ մասին",
-      "body": "Սա «Իմ մասին» բաժինն է։"
-    },
-    "projects": {
-      "title": "Նախագծեր",
-      "body": "Սա «Նախագծեր» բաժինն է։"
-    },
-    "experience": {
-      "title": "Աշխատանքային փորձ",
-      "body": "Սա «Աշխատանքային փորձ» բաժինն է։"
-    },
-    "stack": {
-      "title": "Տեխնոլոգիաներ",
-      "body": "Սա «Tech Stack» բաժինն է։"
-    },
-    "contact": {
-      "title": "Կապ հաստատել",
-      "body": "Սա «Կապ» բաժինն է։"
-    }
   }
 }

@@ -6,7 +6,16 @@ export const SECTIONS = [
   { id: 3, key: 'stack', label: 'Tech Stack' },
 ] as const;
 
-export const MIN_SECTION = SECTIONS[0].id;
-export const MAX_SECTION = SECTIONS[SECTIONS.length - 1].id;
+export type SectionId = (typeof SECTIONS)[number]['id'];
+export type SectionKey = (typeof SECTIONS)[number]['key'];
 
-export const clampSection = (n: number) => Math.max(MIN_SECTION, Math.min(MAX_SECTION, n));
+export const MIN_SECTION: SectionId = SECTIONS[0].id;
+export const MAX_SECTION: SectionId = SECTIONS[SECTIONS.length - 1].id;
+
+export function clampSection(id: number): SectionId {
+  return Math.max(MIN_SECTION, Math.min(MAX_SECTION, id)) as SectionId;
+}
+
+export function getSectionIds(): SectionId[] {
+  return SECTIONS.map((s) => s.id);
+}

@@ -15,7 +15,8 @@ export default function useTypingAnimation(
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (!phrases?.length) {
+
+    if (!phrases.length) {
       el.textContent = '';
       return;
     }
@@ -30,6 +31,7 @@ export default function useTypingAnimation(
       if (cancelled) return;
 
       const phrase = phrases[phraseIndex] ?? '';
+
       if (deleting) {
         el.textContent = phrase.substring(0, Math.max(0, charIndex - 1));
         charIndex -= 1;
@@ -65,7 +67,7 @@ export default function useTypingAnimation(
 
     return () => {
       cancelled = true;
-      if (timeoutId) window.clearTimeout(timeoutId);
+      if (timeoutId !== null) window.clearTimeout(timeoutId);
     };
   }, [ref, phrases, typingSpeed, deletingSpeed, pauseTime]);
 }

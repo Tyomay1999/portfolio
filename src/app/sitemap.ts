@@ -1,12 +1,14 @@
 import type { MetadataRoute } from 'next';
-import { languages } from '../i18n/settings';
-import { env } from '../lib/env';
+import { languages } from '@/i18n/settings';
+import { absoluteUrl } from '@/lib/seo';
+
+export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = env.SITE_URL.replace(/\/+$/, '');
+  const lastModified = new Date();
 
   return languages.map((locale) => ({
-    url: `${baseUrl}/${locale}`,
-    lastModified: new Date(),
+    url: absoluteUrl(`/${locale}`),
+    lastModified,
   }));
 }

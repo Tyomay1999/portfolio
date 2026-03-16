@@ -1,57 +1,61 @@
-'use client';
-
-import { useEffect, useState } from 'react';
+import { useSyncExternalStore } from 'react';
 import { clampSection, MIN_SECTION } from '@/lib/sections';
+import type { SectionId } from '@/lib/sections';
 
-type SectionChangeCallback = (id: number) => void;
+type Listener = () => void;
 
-let listeners: SectionChangeCallback[] = [];
-let currentSection: number = MIN_SECTION;
+const listeners = new Set<Listener>();
 
-export function subscribe(callback: SectionChangeCallback): () => void {
-  listeners.push(callback);
-  return () => {
-    listeners = listeners.filter((fn) => fn !== callback);
-  };
+let currentSection: SectionId = MIN_SECTION;
+
+function emitChange(): void {
+  listeners.forEach((l) => l());
 }
 
-export function setActiveSection(id: number): void {
-  const next = clampSection(id);
+export function subscribe(listener: Listener): () => void {
+  listeners.add(listener);
+  return () => listeners.delete(listener);
+}
 
-  if (currentSection !== next) {
-    currentSection = next;
-
-    if (typeof window !== 'undefined') {
-      sessionStorage.setItem('activeSection', String(next));
+export function getActiveSection(): SectionId {
+  if (typeof window !== 'undefined') {
+    const raw = sessionStorage.getItem('activeSection');
+    if (raw) {
+      const parsed = Number(raw);
+      if (Number.isFinite(parsed)) currentSection = clampSection(parsed);
     }
-
-    listeners.forEach((fn) => fn(next));
   }
-}
 
-export function getActiveSection(): number {
   return currentSection;
 }
 
-export function useActiveSection(): number {
-  const [section, setSection] = useState<number>(currentSection);
+export function setActiveSection(id: SectionId): void {
+  const next = clampSection(id);
 
-  useEffect(() => {
-    return subscribe(setSection);
-  }, []);
+  if (currentSection === next) return;
 
-  return section;
+  currentSection = next;
+
+  if (typeof window !== 'undefined') {
+    sessionStorage.setItem('activeSection', String(next));
+  }
+
+  emitChange();
+}
+
+export function useActiveSection(): SectionId {
+  return useSyncExternalStore(subscribe, getActiveSection, () => MIN_SECTION);
 }
 
 export function restoreSectionFromSession(): boolean {
   if (typeof window === 'undefined') return false;
 
-  const saved = sessionStorage.getItem('activeSection');
-  if (!saved) return false;
+  const raw = sessionStorage.getItem('activeSection');
+  if (!raw) return false;
 
-  const parsed = Number(saved);
+  const parsed = Number(raw);
   if (!Number.isFinite(parsed)) return false;
 
-  setActiveSection(parsed);
+  setActiveSection(clampSection(parsed));
   return true;
 }

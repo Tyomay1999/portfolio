@@ -1,0 +1,43 @@
+:root {
+  --top-ui-h: 64px;
+}
+
+.story-scroll-container {
+  scrollbar-gutter: stable both-edges;
+
+  height: 100dvh;
+  overflow-y: auto;
+
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.invisible-scrollbar {
+  scrollbar-color: transparent transparent;
+}
